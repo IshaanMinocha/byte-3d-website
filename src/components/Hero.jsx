@@ -2,7 +2,10 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div>Hero</div>
+    <div className='ml-60'>Hero
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    hello
+    </div>
   )
 }
 
