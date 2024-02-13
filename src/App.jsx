@@ -2,6 +2,7 @@ import Home from './views/Home';
 import About from './views/About';
 import Achievements from './views/Achievements';
 import Projects from './views/Projects';
+import Index from './views/Index';
 import Team from './views/Team';
 import Contact from './views/Contact';
 import Error404 from './views/Error404';
@@ -18,7 +19,7 @@ export default function App() {
 
   return (
     <>
-    <BrowserRouter>
+      <BrowserRouter>
         <Navbar />
         <LoadingBar
           color='#D00858'
@@ -28,6 +29,7 @@ export default function App() {
         />
         <Routes>
           {/* <Route path="/loader" element={<Loader setProgress={setProgress} />} /> */}
+          <Route path="/" element={<Index />} />
           <Route path="/home" element={<Home setProgress={setProgress} />} />
           <Route path="/about" element={<About setProgress={setProgress} />} />
           <Route path="/achievements" element={<Achievements setProgress={setProgress} />} />
@@ -37,7 +39,6 @@ export default function App() {
           <Route path="*" element={<Error404 />} />
         </Routes>
         <BackToTop />
-        {/* <Footer /> */}
       </BrowserRouter>
     </>
   )
