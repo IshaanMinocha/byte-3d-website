@@ -1,14 +1,18 @@
 import React, { useEffect } from 'react'
+import { motion } from "framer-motion";
+import ParticleRing from '../components/ParticleRing';
 
-export default function About({setProgress}) {
+export default function About({ setProgress }) {
 
-  useEffect(()=>{
+  useEffect(() => {
     setProgress(20);
-    setTimeout(()=>{
+    setTimeout(() => {
       setProgress(100);
     }, 400)
   }, [])
   return (
-    <div>About</div>
+    <>
+      <ParticleRing title = "About"/>
+    </>
   )
 }

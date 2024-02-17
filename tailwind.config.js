@@ -13,8 +13,8 @@ export default {
         light: '#F6F5F3',
         dark: '#0A0A0A',
         purple: '#D00858',
-        yellow: '#FFB502',
-        violet: '#30003A'
+        yellow: '#4afaab',
+        violet: '#0c202a'
       }
     }
   },

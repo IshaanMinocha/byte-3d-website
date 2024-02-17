@@ -10,20 +10,37 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/drei": "^9.97.6",
+    "@react-three/fiber": "^8.15.16",
     "@splinetool/react-spline": "^2.2.6",
+    "@studio-freight/lenis": "^0.2.28",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/three": "^0.139.0",
+    "@types/webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-types-0.5.5.tgz",
+    "cors": "^2.8.5",
+    "drei": "^2.2.21",
     "framer-motion": "^11.0.3",
+    "gsap": "^3.11.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.0",
+    "react-three-fiber": "^6.0.13",
     "react-top-loading-bar": "^2.3.1",
-    "remixicon": "^4.1.0"
+    "remixicon": "^4.1.0",
+    "three": "^0.161.0",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
+    "@types/three": "^0.139.0",
+    "@types/webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-types-0.5.5.tgz",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.17",
+    "cross-env": "^7.0.3",
     "daisyui": "^4.6.1",
     "eslint": "^8.55.0",
     "eslint-plugin-react": "^7.33.2",
@@ -31,7 +48,8 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-0.5.5.tgz"
   },
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
   "main": "vite.config.js",

@@ -30,7 +30,7 @@ const BackToTop = () => {
       } transition-opacity duration-300`}
       onClick={scrollToTop}
     >
-      <FiChevronUp className="text-yellow" />
+      <FiChevronUp className="text-light" />
     </div>
   );
 };
