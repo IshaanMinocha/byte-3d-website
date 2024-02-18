@@ -10,7 +10,7 @@ function Footer() {
           <div className="mb-6 flex flex-col md:mb-0">
             <div>
 
-            <a href="https://flowbite.com/" className="flex items-center">
+            <a href="#" className="flex items-center">
               <img src="byte-logo-transparent.png" className="h-8 me-3" alt="FlowBite Logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">B.Y.T.E.</span>
             </a>
@@ -21,13 +21,13 @@ function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">EXPLORE</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">About Us</a>
+                  <a href="/about" className="hover:underline">About Us</a>
                 </li>
                 <li className="mb-4">
-                  <a href="https://tailwindcss.com/" className="hover:underline">Projects</a>
+                  <a href="https://github.com/bytemait" target="_blank" className="hover:underline">Projects</a>
                 </li>
                 <li className="mb-4">
-                  <a href="https://tailwindcss.com/" className="hover:underline">Achievements</a>
+                  <a href="/achievements" className="hover:underline">Achievements</a>
                 </li>
               </ul>
             </div>
@@ -35,19 +35,19 @@ function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</a>
+                  <a href="https://github.com/bytemait" target='_blank' className="hover:underline ">Github</a>
                 </li>
                 <li className="mb-4">
-                  <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Discord</a>
+                  <a href="https://linktr.ee/bytemait" target='_blank' className="hover:underline">Discord</a>
                 </li>
                 <li className="mb-4">
-                  <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Instagram</a>
+                  <a href="https://www.instagram.com/byte__official" target='_blank' className="hover:underline">Instagram</a>
                 </li>
                 <li className="mb-4">
-                  <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Youtube</a>
+                  <a href="https://linktr.ee/bytemait" target='_blank' className="hover:underline">Youtube</a>
                 </li>
                 <li className="mb-4">
-                  <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">LinkedIn</a>
+                  <a href="https://www.linkedin.com/company/byte-mait/about/" target='_blank' className="hover:underline">LinkedIn</a>
                 </li>
               </ul>
             </div>
@@ -69,7 +69,7 @@ function Footer() {
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" className="hover:underline">BYTE™</a>. All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
-            <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <a href="https://www.linkedin.com/company/byte-mait/about/" target='_blank' className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
                 <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd" />
               </svg>
@@ -87,7 +87,7 @@ function Footer() {
               </svg>
               <span className="sr-only">Twitter page</span>
             </a>
-            <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+            <a href="https://github.com/bytemait" target='_blank' className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
               <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd" />
               </svg>

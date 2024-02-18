@@ -12,6 +12,8 @@ const Challenges = () => {
         switch (selectedChallenge) {
             case 'ML':
                 return <MLChallenge />;
+            case 'ML2':
+                return <MLChallenge2 />;
             case 'Web Frontend':
                 return <WebFrontendChallenge />;
             case 'App Frontend':
@@ -38,7 +40,7 @@ const Challenges = () => {
 };
 
 const Navbar = ({ selectedChallenge, handleChallengeChange }) => {
-    const challenges = ['Web Frontend', 'App Frontend', 'Backend', 'UI/UX', 'ML', 'IoT'];
+    const challenges = ['Web Frontend', 'App Frontend', 'Backend', 'UI/UX', 'ML', 'ML2', 'IoT'];
 
     return (
         <nav className="bg-black p-4">
@@ -66,7 +68,6 @@ const MLChallenge = () => {
             <br />
             <p className='text-orange-400'>Download the Data sets here:</p>
             <ul className='underline text-green-500'>
-                <li><a href="/Experience-Salary.csv">Click Here to download salary dataset</a></li>
                 <li><a href="/housing_price_dataset.csv">Click Here to download housing prices</a></li>
             </ul>
             <br />
@@ -89,9 +90,230 @@ const MLChallenge = () => {
             <p>Use Python libraries like pandas, NumPy, and scikit-learn.</p>
             <h2 className="text-xl font-semibold mb-2">BONUS:</h2>
             <p>Visualize data using histograms, scatter plots, etc.</p>
+            <br></br>
+            <section className="mb-8">
+                <h2 className="text-xl font-semibold">Submission Guidelines</h2>
+
+                <p>Upon completion, please provide github link to the submission form <a className='underline' target='_blank' href="https://forms.gle/vnGE7aMLzuEJv49n8">https://forms.gle/vnGE7aMLzuEJv49n8</a> </p>
+                <p>We appreciate clean and well-structured code. Attention to detail, proper error handling will be considered during the evaluation process.</p>
+            </section>
+
         </div>
     );
 };
+
+
+const MLChallenge2 = () => {
+    return (
+        <div className="max-w-3xl mx-auto p-8 rounded-lg shadow-lg">
+            <h1 className="text-2xl font-semibold mb-4">Machine Learning Challenge: Predicting Employee Salaries</h1>
+            <h2 className="text-xl font-semibold mb-2">Problem Statement:</h2>
+            <ol className="list-decimal pl-4">
+                <li>You are provided with a .csv file containing the employee's experience (in months) and salary (in thousand).</li>
+                <ul className='underline text-green-500'>
+                    <li><a href="/Experience-Salary.csv">Click Here to download salary dataset</a></li> 
+                </ul>
+                <li>Your task is to predict the salary based on the employee's past experience using linear regression.</li>
+                <li>Complete the given functions to implement linear regression.</li>
+                <ul className='underline text-green-500'>
+                    <li><a href="/implementation.ipynb" download>Click Here to download .ipynb file</a></li>
+                    <li><a href="/implementation.py" download>Click Here to download .py file</a></li>
+                    <li><a href="/implementation.pdf" download>More submission instructions and reference materials</a></li>
+                </ul>
+            </ol>
+            <br></br>
+            <section className="mb-8">
+                <h2 className="text-xl font-semibold">Submission Guidelines</h2>
+
+                <p>Upon completion, please provide github link to the submission form <a className='underline' target='_blank' href="https://forms.gle/vnGE7aMLzuEJv49n8">https://forms.gle/vnGE7aMLzuEJv49n8</a> </p>
+                <p>We appreciate clean and well-structured code. Attention to detail, proper error handling will be considered during the evaluation process.</p>
+            </section>
+            <hr className="my-4" />
+            <h2 className="text-xl font-semibold mb-2">Packages:</h2>
+            <pre className="whitespace-pre-wrap bg-black text-green-500">
+                <code>
+                    {`import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import math
+import copy
+
+# import data file
+# clean the data up to 2 decimal places for both experience and salary columns
+# test size = 20%
+# reshape the values using the concept of feature matrix
+data = pd.read_csv()`}
+                </code>
+            </pre>
+            
+            <h2 className="text-xl font-semibold mb-2">Implementation 1:</h2>
+            <pre className="whitespace-pre-wrap bg-black text-green-500">
+                <code>
+                    {`# complete the compute_cost() function below to compute the cost J(w, b)
+def compute_cost(x, y, w, b):
+    """
+    Computes the cost function for linear regression.
+
+    Args:
+        x (ndarray): Shape (m,) Input to the model (experience in months)
+        y (ndarray): Shape (m,) Label (Actual salaries)
+        w, b (scalar): Parameters of the model
+
+    Returns
+        total_cost (float): The cost of using w, b as the parameters for linear regression
+               to fit the data points in x and y
+    """
+    # number of training examples
+    m = x.shape[0]
+
+    # You need to return this variable correctly
+    total_cost = 0
+
+    # START CODE HERE
+
+    # END CODE HERE
+
+    return total_cost
+
+# Compute cost with some initial values for parameters w, b
+# Do not change the values in this code, simply run this block
+initial_w = 0.9998
+initial_b = 1
+
+cost = compute_cost(X_train, y_train, initial_w, initial_b)
+print(type(cost))
+print(cost)
+
+# output for cost should be around 14.406`}
+                </code>
+            </pre>
+
+            <h2 className="text-xl font-semibold mb-2">Implementation 2:</h2>
+            <pre className="whitespace-pre-wrap bg-black text-green-500">
+                <code>
+                    {`# implement a function called compute_gradient which calculates ∂J(w)/∂w, ∂J(w)/∂b
+def compute_gradient(x, y, w, b):
+    """
+    Computes the gradient for linear regression
+    Args:
+        x (ndarray): Shape (m,) Input to the model (Population of cities)
+        y (ndarray): Shape (m,) Label (Actual profits for the cities)
+        w, b (scalar): Parameters of the model
+    Returns:
+        dj_dw (scalar): The gradient of the cost w.r.t. the parameters w
+        dj_db (scalar): The gradient of the cost w.r.t. the parameter b
+    """
+
+    # Number of training examples
+    m = x.shape[0]
+    dj_dw = 0
+    dj_db = 0
+
+    # START CODE HERE
+
+    # END CODE HERE
+
+    return dj_dw, dj_db
+
+initial_w = 0.998
+initial_b = 1
+
+tmp_dj_dw, tmp_dj_db = compute_gradient(X_train, y_train, initial_w, initial_b)
+print('Gradient at initial w, b (zeros):', tmp_dj_dw, tmp_dj_db)
+
+# output should be
+# Gradient at initial w, b (zeros): [22.08482317] [0.36802405]
+test_w = 0.2
+test_b = 0.2
+tmp_dj_dw, tmp_dj_db = compute_gradient(X_train, y_train, test_w, test_b)
+
+print('Gradient at test w, b:', tmp_dj_dw, tmp_dj_db)
+
+# output should be
+# Gradient at test w, b: [-600.2060557] [-21.2052925]
+`}
+                </code>
+            </pre>
+
+            <h2 className="text-xl font-semibold mb-2">Gradient Descent:</h2>
+            <pre className="whitespace-pre-wrap bg-black text-green-500">
+                <code>
+                    {`# do not change the below function, just run it
+def gradient_descent(x, y, w_in, b_in, cost_function, gradient_function, alpha, num_iters):
+    m = len(x)
+    J_history = []
+    w_history = []
+    w = copy.deepcopy(w_in)
+    b = b_in
+    for i in range(num_iters):
+        dj_dw, dj_db = gradient_function(x, y, w, b)
+        w = w - alpha * dj_dw
+        b = b - alpha * dj_db
+        if i < 100000:
+            cost = cost_function(x, y, w, b)
+            J_history.append(cost)
+        if i % math.ceil(num_iters/10) == 0:
+            w_history.append(w)
+            print(f"Iteration {i:4}: Cost {float(J_history[-1]):8.2f}   ")
+    return w, b, J_history, w_history
+
+# Now let's run the gradient descent algorithm above to learn the parameters for our dataset.
+# you can alter the values of iterations, alpha to get the minimum cost and minimum values for w and b
+
+# initialize fitting parameters. Recall that the shape of w is (n,)
+initial_w = 0.
+initial_b = 0.
+
+# some gradient descent settings
+iterations = 2500
+alpha = 0.0001
+
+w, b, _, _ = gradient_descent(X_train, y_train, initial_w, initial_b,
+                               compute_cost, compute_gradient, alpha, iterations)
+print("w, b found by gradient descent:", w, b)
+`}
+                </code>
+            </pre>
+
+            <h2 className="text-xl font-semibold mb-2">Train the Model:</h2>
+            <pre className="whitespace-pre-wrap bg-black text-green-500">
+                <code>
+                    {`# execute the code to predict the output values on the given input of numpy arrays
+# do not alter the code, just execute it
+m = X_train.shape[0]
+predicted = np.zeros(m)
+
+for i in range(m):
+    predicted[i] = w * X_train[i] + b
+`}
+                </code>
+            </pre>
+
+            <h2 className="text-xl font-semibold mb-2">Plot the Predicted Values:</h2>
+            <pre className="whitespace-pre-wrap bg-black text-green-500">
+                <code>
+                    {`# Plot the linear fit
+# code for visualizing the predicted values
+# Add your visualization code here
+`}
+                </code>
+            </pre>
+
+            <h2 className="text-xl font-semibold mb-2">Predict Output on Input Values:</h2>
+            <pre className="whitespace-pre-wrap bg-black text-green-500">
+                <code>
+                    {`# Predict output on input values [17.0, 50.0]
+# code for predicting and displaying output values
+# Add your prediction code here
+`}
+                </code>
+            </pre>
+        </div>
+    );
+};
+
+
+
 
 const WebFrontendChallenge = () => {
     return (
@@ -105,7 +327,7 @@ const WebFrontendChallenge = () => {
                 </li>
             </ul>
 
-            <span className='text-green-500'>Below is an example to refer and you can always reach out to us for any doubts.  Happy Hacking!!</span>
+            <span className='text-green-500'>Below is an example to refer and you can always reach out to us for any doubts.  Happy Developing!!</span>
 
             <h1 className='text-xl my-6 text-white'>Reference Video:</h1>
             <div className="video-container flex gap-2 my-4">
@@ -116,7 +338,7 @@ const WebFrontendChallenge = () => {
             </div>
             <hr />
             <br />
-            <h1 className="text-3xl font-semibold mb-4">Frontend Web Development Task</h1>
+            <h1 className="text-3xl font-semibold mb-4">Frontend Web Development Challenge</h1>
 
             <section className="mb-8">
                 <p>This task involves creating a web application that interacts with the B.Y.T.E. Poetry API. The goal is to build a user-friendly interface for users to register, log in, and create/display poems on a dashboard.</p>
@@ -124,7 +346,7 @@ const WebFrontendChallenge = () => {
             </section>
 
             <section className="mb-8">
-                <h2 className="text-xl font-semibold">Task Requirements</h2>
+                <h2 className="text-xl font-semibold">Challenge Requirements</h2>
 
                 <ul className="list-disc pl-8">
                     <li>Create a <strong>Home Page</strong> with the following features:</li>
@@ -160,7 +382,7 @@ const WebFrontendChallenge = () => {
             <section className="mb-8">
                 <h2 className="text-xl font-semibold">Submission Guidelines</h2>
 
-                <p>Upon completion, please provide github link to the submission form</p>
+                <p>Upon completion, please provide github link to the submission form <a className='underline' target='_blank' href="https://forms.gle/vnGE7aMLzuEJv49n8">https://forms.gle/vnGE7aMLzuEJv49n8</a> </p>
                 <p>We appreciate clean and well-structured code. Attention to detail, proper error handling, and responsiveness will be considered during the evaluation process.</p>
             </section>
 
@@ -181,7 +403,7 @@ const WebFrontendChallenge = () => {
 
             <section className="mb-8">
                 <h2 className="text-xl font-semibold">Authentication</h2>
-                <p>The API requires authentication using JWT tokens. Please include the access token in the <code>Authorization</code> header for protected endpoints.</p>
+                <p>The API requires authentication using JWT tokens. Please include the access token in the <code>Authorization</code> header for protected endpoints. For more info refer to <a className='underline' target='_blank' href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization">This Link</a> </p>
             </section>
 
             <section className="mb-8">
@@ -197,7 +419,7 @@ const WebFrontendChallenge = () => {
                             <li><strong>Method:</strong> <code>POST</code></li>
                             <li><strong>Authentication:</strong> Not Required</li>
                             <li>
-                                <strong>Request:</strong>
+                                <strong>Sample Request:</strong>
                                 <pre className="bg-black p-2 rounded text-green-500 overflow-x-auto">
                                     <code>
                                         {`{
@@ -228,7 +450,7 @@ const WebFrontendChallenge = () => {
                             <li><strong>Method:</strong> <code>POST</code></li>
                             <li><strong>Authentication:</strong> Not Required</li>
                             <li>
-                                <strong>Request:</strong>
+                                <strong>Sample Request:</strong>
                                 <pre className="bg-black text-green-500 p-2 rounded overflow-x-auto">
                                     <code>
                                         {`{
@@ -320,7 +542,7 @@ const WebFrontendChallenge = () => {
                             <li><strong>Method:</strong> <code>POST</code></li>
                             <li><strong>Authentication:</strong> Required</li>
                             <li>
-                                <strong>Request:</strong>
+                                <strong>Sample Request:</strong>
                                 <pre className="bg-black text-green-500 p-2 rounded overflow-x-auto">
                                     <code>
                                         {`{
@@ -375,7 +597,7 @@ const AppFrontendChallenge = () => {
                 </li>
             </ul>
 
-            <span className='text-green-500'>Below is an example to refer and you can always reach out to us for any doubts.  Happy Hacking!!</span>
+            <span className='text-green-500'>Below is an example to refer and you can always reach out to us for any doubts.  Happy Developing!!</span>
 
             <h1 className='text-xl my-6 text-white'>Reference Video:</h1>
             <div className="video-container flex gap-2 my-4">
@@ -383,15 +605,15 @@ const AppFrontendChallenge = () => {
                 <iframe width="300" height="200" src="https://www.youtube.com/embed/tm9CPP8C7jw" title="Working of App API for Frontend Challenge - BYTE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
             </div>
-            <h1 className="text-3xl font-bold mb-4">App Development Task</h1>
+            <h1 className="text-3xl font-bold mb-4">App Development Challenge</h1>
 
             <section className="mb-8">
-                <p> This task involves creating a mobile application that interacts with the Events API. The goal is to build a user-friendly interface for users to view events and create new events </p>
-                <p>You are allowed to use any mobile development framework of your choice, and  is recommended for this task. </p>
+                <p> This task involves creating a mobile application that interacts with the B.Y.T.E. Events API. The goal is to build a user-friendly interface for users to view events and create new events </p>
+                <p>You are allowed to use any mobile development framework of your choice. </p>
             </section>
 
             <section className="mb-8">
-                <h2 className="text-xl font-semibold">Task Requirements</h2>
+                <h2 className="text-xl font-semibold">Challenge Requirements</h2>
 
                 <ul className="list-disc pl-8">
                     <li>Create a <strong>Home Screen</strong> with the following features:</li>
@@ -420,7 +642,7 @@ const AppFrontendChallenge = () => {
             <section className="mb-8">
                 <h2 className="text-xl font-semibold">Submission Guidelines</h2>
 
-                <p>Upon completion, please provide github link to the submission form</p>
+                <p>Upon completion, please provide github link to the submission form <a className='underline' target='_blank' href="https://forms.gle/vnGE7aMLzuEJv49n8">https://forms.gle/vnGE7aMLzuEJv49n8</a> </p>
                 <p>We appreciate clean and well-structured code. Attention to detail, proper error handling, and responsiveness will be considered during the evaluation process.</p>
             </section>
 
@@ -480,7 +702,7 @@ const AppFrontendChallenge = () => {
                             <li><strong>Endpoint:</strong> <code>/event/create/</code></li>
                             <li><strong>Method:</strong> <code>POST</code></li>
                             <li>
-                                <strong>Request:</strong>
+                                <strong>Sample Request:</strong>
                                 <pre className="bg-black text-green-500 p-2 rounded overflow-x-auto">
                                     <code>
                                         {`{
@@ -526,16 +748,26 @@ const BackendChallenge = () => {
     return (
         <div className="max-w-3xl mx-auto p-8">
             <h1 className="text-xl mb-4"><span className='text-green-500 font-bold text-2xl'>What we expect: </span>
-                Create a backend server with user authentication and a RESTful API for managing poems. Users can create poems, retrieve all poems, and retrieve poems created by a specific user.</h1>
+                Create a backend server with user authentication and a RESTful API for managing poems. Users shall be able to create poems, retrieve all poems, and retrieve poems created by a specific user using the API.</h1>
 
-            <span className='text-green-500'>Below is an example to refer and you can always reach out to us for any doubts.  Happy Hacking!!</span>
+            <span className='text-green-500'>Below is an example to refer and you can always reach out to us for any doubts.  Happy Developing!!</span>
 
-            <h1 className="text-2xl font-semibold mb-4"> API Documentation</h1>
             <h1 className='text-xl my-6 text-white'>Reference Video:</h1>
             <div className="video-container flex gap-2 my-4 justify-center">
-                <iframe width="400" height="300" src="https://www.youtube.com/embed/fXMpu_42jJA" title="Website Demo for Poems API- BYTE Challenges" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/Q0SniedHDWU" title="API Demo for Backend Challenges - B.Y.T.E." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
             </div>
+
+            <h1 className="text-3xl font-bold mb-4">Backend Development Challenge</h1>
+
+            <section className="mb-8">
+                <p> This task involves creating a RESTful API as shown in the example B.Y.T.E. Events API. The goal is to build a fully-functional API for users to authorize and create/read poems. </p>
+                <br></br><p>You are allowed to use any backend development framework and connect with any database of your choice. The Database Schema design is completely up to you, just make sure that all the endpoints work as expected.</p>
+            </section>
+
+            <h1 className="text-3xl font-bold mb-4">How shall the API work?</h1>
+
+
             <section className="mb-8">
                 <h2 className="text-xl font-semibold">Introduction</h2>
                 <p>Welcome to the B.Y.T.E. Poetry API documentation. This API allows users to interact with poems and user details.</p>
@@ -543,7 +775,8 @@ const BackendChallenge = () => {
 
             <section className="mb-8">
                 <h2 className="text-xl font-semibold">Authentication</h2>
-                <p>The API requires authentication using JWT tokens. Access token will be required in Authorization header so implement the logic accordingly.</p>
+                <p>The API shall use JWT tokens for authentication. For accessing the protected endpoints, anyone interacting with the API shall be able to send the Authorization token in the request header.
+                     So implement the authentication logic accordingly. For more info about JWT tokens refer <a className="underline" target="_blank" href="https://jwt.io/introduction"> this link</a> </p>
             </section>
 
             <section className="mb-8">
@@ -555,11 +788,13 @@ const BackendChallenge = () => {
                     <section className="mb-4">
                         <h4 className="text-md font-semibold">1.1 Register</h4>
                         <ul>
+                            <li><strong>Functionality:</strong> Any user interacting with the API shall be able to register himself as a user on this endpoint.
+                             Store the name, email and password in the database and return a status code 201 if the user is created successfully. <strong>Working Example: </strong> <a href="http://panel.mait.ac.in:8001/auth/register/"> http://panel.mait.ac.in:8002/auth/register/</a> </li>
                             <li><strong>Endpoint:</strong> <code>/auth/register/</code></li>
                             <li><strong>Method:</strong> <code>POST</code></li>
                             <li><strong>Authentication:</strong> Not Required</li>
                             <li>
-                                <strong>Request:</strong>
+                                <strong>Sample Request:</strong>
                                 <pre className="bg-black p-2 rounded text-green-500 overflow-x-auto">
                                     <code>
                                         {`{
@@ -571,7 +806,7 @@ const BackendChallenge = () => {
                                 </pre>
                             </li>
                             <li>
-                                <strong>Response:</strong>
+                                <strong>Expected Response:</strong>
                                 <pre className="bg-black text-green-500 p-2 rounded overflow-x-auto">
                                     <code>
                                         {`{
@@ -586,11 +821,13 @@ const BackendChallenge = () => {
                     <section>
                         <h4 className="text-md font-semibold">1.2 Login</h4>
                         <ul>
+                            <li><strong>Functionality:</strong> Any registered user shall be able to login by submitting their email and password to this endpoint.
+                             The API shall generate access and refresh tokens and return them as a response. <strong>Working Example: </strong> <a href="http://panel.mait.ac.in:8001/auth/login/"> http://panel.mait.ac.in:8002/auth/login/</a> </li>
                             <li><strong>Endpoint:</strong> <code>/auth/login/</code></li>
                             <li><strong>Method:</strong> <code>POST</code></li>
                             <li><strong>Authentication:</strong> Not Required</li>
                             <li>
-                                <strong>Request:</strong>
+                                <strong>Sample Request:</strong>
                                 <pre className="bg-black text-green-500 p-2 rounded overflow-x-auto">
                                     <code>
                                         {`{
@@ -601,7 +838,7 @@ const BackendChallenge = () => {
                                 </pre>
                             </li>
                             <li>
-                                <strong>Response:</strong>
+                                <strong>Expected Response:</strong>
                                 <pre className="bg-black text-green-500 p-2 rounded overflow-x-auto">
                                     <code>
                                         {`{
@@ -621,11 +858,12 @@ const BackendChallenge = () => {
                     <section className="mb-4">
                         <h4 className="text-md font-semibold">2.1 Get User Details</h4>
                         <ul>
+                        <li><strong>Functionality:</strong> Any user interacting with the API shall be able to fetch user details by submitting access token as Authorization header to this endpoint. <strong>Working Example: </strong> <a href="http://panel.mait.ac.in:8001/auth/user-details/"> http://panel.mait.ac.in:8002/auth/user-details/</a> </li>
                             <li><strong>Endpoint:</strong> <code>/auth/user-details/</code></li>
                             <li><strong>Method:</strong> <code>GET</code></li>
                             <li><strong>Authentication:</strong> Required</li>
                             <li>
-                                <strong>Response:</strong>
+                                <strong>Expected Response:</strong>
                                 <pre className="bg-black text-green-500 p-2 rounded overflow-x-auto">
                                     <code>
                                         {`{
@@ -648,11 +886,13 @@ const BackendChallenge = () => {
                     <section className="mb-4">
                         <h4 className="text-md font-semibold">3.1 Get Poems</h4>
                         <ul>
+                        <li><strong>Functionality:</strong> Any logged in user interacting with the API shall be able to get a list of his poems by submitting access token as Authorization header to this endpoint.  .
+                              <strong>Working Example: </strong> <a href="http://panel.mait.ac.in:8001/poem/get/"> http://panel.mait.ac.in:8002/poem/get/</a> </li>
                             <li><strong>Endpoint:</strong> <code>/poem/get/</code></li>
                             <li><strong>Method:</strong> <code>GET</code></li>
                             <li><strong>Authentication:</strong> Required</li>
                             <li>
-                                <strong>Response:</strong>
+                                <strong>Expected Response:</strong>
                                 <pre className="bg-black text-green-500 p-2 rounded overflow-x-auto">
                                     <code>
                                         {`[
@@ -678,11 +918,13 @@ const BackendChallenge = () => {
                     <section>
                         <h4 className="text-md font-semibold">3.2 Create a Poem</h4>
                         <ul>
+                        <li><strong>Functionality:</strong> Any logged in user interacting with the API shall be able to create poems by submitting access token as Authorization header to this endpoint and poem and author in the request data.  .
+                              <strong>Working Example: </strong> <a href="http://panel.mait.ac.in:8001/poem/create/"> http://panel.mait.ac.in:8002/poem/create/</a> </li>
                             <li><strong>Endpoint:</strong> <code>/poem/create/</code></li>
                             <li><strong>Method:</strong> <code>POST</code></li>
                             <li><strong>Authentication:</strong> Required</li>
                             <li>
-                                <strong>Request:</strong>
+                                <strong>Sample Request:</strong>
                                 <pre className="bg-black text-green-500 p-2 rounded overflow-x-auto">
                                     <code>
                                         {`{
@@ -693,7 +935,7 @@ const BackendChallenge = () => {
                                 </pre>
                             </li>
                             <li>
-                                <strong>Response:</strong>
+                                <strong>Expected Response:</strong>
                                 <pre className="bg-black text-green-500 p-2 rounded overflow-x-auto">
                                     <code>
                                         {`{
@@ -717,8 +959,13 @@ const BackendChallenge = () => {
             <section className="mb-8">
                 <h2 className="text-xl font-semibold">Submission Guidelines</h2>
 
-                <p>Upon completion, please provide github link to the submission form</p>
+                <p>Upon completion, please provide github link to the submission form <a className='underline' target='_blank' href="https://forms.gle/vnGE7aMLzuEJv49n8">https://forms.gle/vnGE7aMLzuEJv49n8</a></p>
                 <p>We appreciate clean and well-structured code. Attention to detail, proper error handling, and responsiveness will be considered during the evaluation process.</p>
+            </section>
+            <section className="mb-8">
+                <h2 className="text-xl font-semibold">Note to Developer</h2>
+
+                <p>Feel free to reach out if you have any clarifications or need further assistance during the development process.</p>
             </section>
 
             <section className="mb-8">
@@ -753,16 +1000,9 @@ const IoTChallenge = () => {
     return (
         <div className='max-w-3xl mx-auto p-8'>
             <div className=" p-8 rounded-lg shadow-lg">
-                <h1 className="text-xl mb-4"><span className='text-green-500 font-bold text-2xl'>What we expect: </span>
-                    Create a mobile application and connect it to the backend server hosted at:
-                </h1>
-                <ul className='text-lg'>
-                    <li>For Events Mobile App -
-                        <a className='underline' href="http://panel.mait.ac.in:8002/"> http://panel.mait.ac.in:8002/</a>
-                    </li>
-                </ul>
+                
+            <h1 className="text-3xl font-semibold mb-4">IoT Challenge</h1>
 
-                <span className='text-green-500'>Below is an example to refer and you can always reach out to us for any doubts.  Happy Hacking!!</span>
 
                 <h1 className='text-xl my-6 text-white'>Reference Video:</h1>
                 <div className="video-container flex gap-2 my-4">
@@ -799,7 +1039,7 @@ const IoTChallenge = () => {
                     </p>
                 </section>
                 <section className="mb-8">
-                    <h2 className="text-xl font-bold mb-2">3. Task Overview</h2>
+                    <h2 className="text-xl font-bold mb-2">3. Challenge Overview</h2>
                     <section className="mb-4">
                         <h3 className="text-lg font-bold mb-2">3.1 Part 1: Arduino Circuit and C/C++ Programming</h3>
                         <h4 className="text-lg font-bold mb-2">3.1.1 Hardware Setup</h4>

@@ -5,7 +5,11 @@ import { pointsInner, pointsOuter } from "./utlis";
 import achbff from "../Assets/ach_bff.png"
 import achsih from "../Assets/ach3.jpg"
 import achiiit from "../Assets/ach5.jpg"
-import achiit from "../Assets/ach1.jpg"
+import achiit from "../Assets/ach6.jpeg"
+import acht from "../Assets/ach7.png"
+import achhwm from "../Assets/ach8.png"
+
+
 const ParticleRingAchievements = ({ title }) => {
   const achievements = [
     {
@@ -23,7 +27,25 @@ const ParticleRingAchievements = ({ title }) => {
     {
       id: 3,
       image: achiiit,
-      heading: `Empowher '23 Winners`,
+      heading: `Empowher '23 Runner Ups`,
+      projectLink: 'https://example.com/project2'
+    },
+    {
+      id: 4,
+      image: achiit,
+      heading: `HackXtreme '23 Winners`,
+      projectLink: 'https://example.com/project2'
+    },
+    {
+      id: 5,
+      image: acht,
+      heading: `TechnoHacks Runner Ups`,
+      projectLink: 'https://example.com/project2'
+    },
+    {
+      id: 5,
+      image: achhwm,
+      heading: `HackWithMAIT 4.0 Winners`,
       projectLink: 'https://example.com/project2'
     },
     // {
