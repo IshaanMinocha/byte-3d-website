@@ -51,6 +51,7 @@ const TiltCard = () => {
 
     return (
         <>
+                
             <motion.div
                 ref={ref}
                 onMouseMove={handleMouseMove}
@@ -62,7 +63,7 @@ const TiltCard = () => {
                     rotateX,
                     rotateY,
                 }}
-                className="relative w-screen h-40 rounded-xl font-subhead text-light"
+                className="relative w-screen h-40 rounded-xl font-mono text-light"
             >
 
                 <p
@@ -74,7 +75,7 @@ const TiltCard = () => {
                     <motion.span
                         onMouseEnter={() => handleHover("Brains")}
                         onMouseLeave={() => handleHover("BYTE")}
-                        className="hover:text-yellow rounded-md px-2 py-1 hover:animate-pulse"
+                        className="hover:text-green-400 rounded-md px-2 py-1 hover:animate-pulse"
                         animate={controls}
                     >
                         {hoveredAcronym === "Brains" ? "Brains" : "B"}
@@ -83,7 +84,7 @@ const TiltCard = () => {
                     <motion.span
                         onMouseEnter={() => handleHover("Yielding")}
                         onMouseLeave={() => handleHover("BYTE")}
-                        className="hover:text-yellow rounded-md px-2 py-1 hover:animate-pulse"
+                        className="hover:text-green-400 rounded-md px-2 py-1 hover:animate-pulse"
                         animate={controls}
                     >
                         {hoveredAcronym === "Yielding" ? "Yielding" : "Y"}
@@ -92,7 +93,7 @@ const TiltCard = () => {
                     <motion.span
                         onMouseEnter={() => handleHover("Technical")}
                         onMouseLeave={() => handleHover("BYTE")}
-                        className="hover:text-yellow rounded-md px-2 py-1 hover:animate-pulse"
+                        className="hover:text-green-400 rounded-md px-2 py-1 hover:animate-pulse"
                         animate={controls}
                     >
                         {hoveredAcronym === "Technical" ? "Technical" : "T"}
@@ -101,7 +102,7 @@ const TiltCard = () => {
                     <motion.span
                         onMouseEnter={() => handleHover("Endeavours")}
                         onMouseLeave={() => handleHover("BYTE")}
-                        className="hover:text-yellow rounded-md px-2 py-1 hover:animate-pulse"
+                        className="hover:text-green-400 rounded-md px-2 py-1 hover:animate-pulse"
                         animate={controls}
                     >
                         {hoveredAcronym === "Endeavours" ? "Endeavours" : "E"}

@@ -15,6 +15,8 @@ import LoadingBar from 'react-top-loading-bar'
 import { useState } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import Easter from './components/Easter';
+import NavbarTop from './components/NavbarTop';
+import ModelViewer from './components/ModelViewer';
 
 export default function App() {
 
@@ -23,7 +25,7 @@ export default function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <NavbarTop />
         <LoadingBar
           color='#D00858'
           progress={progress}
@@ -38,15 +40,16 @@ export default function App() {
           <Route path="/achievements" element={<Achievements setProgress={setProgress} />} />
           <Route path="/projects" element={<Projects setProgress={setProgress} />} />
           <Route path="/tasks" element={<Tasks />} />
-          <Route path="/contact" element={<Contact setProgress={setProgress} />} />
+          {/* <Route path="/contact" element={<Contact setProgress={setProgress} />} /> */}
           <Route path="/team" element={<Team setProgress={setProgress} />} />
-          <Route path="/join" element={<Join setProgress={setProgress} />} />
+          {/* <Route path="/join" element={<Join setProgress={setProgress} />} /> */}
           <Route path="*" element={<Navigate to="/404" />} />
           <Route path="/404" element={<Error404/>} />
         </Routes>
         <Easter/>
         <BackToTop />
         {/* <Footer/> */}
+        <Footer/>
       </BrowserRouter>
     </>
   )

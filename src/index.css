@@ -26,3 +26,6 @@ html {
     border: 0.5px solid transparent;
     background-clip: content-box;
 }
+*{
+    transition: all 0.2s linear;
+}

@@ -46,14 +46,14 @@ const WorkCard = ({ image, content, info}) => {
         rotateX,
         rotateY,
       }}
-      className="relative h-[32rem] w-[24rem] rounded-xl bg-gradient-to-br from-yellow to-violet-300"
+      className="relative h-[32rem] w-[24rem] rounded-xl bg-gradient-to-br from-green-400 to-violet-300"
     >
       <div
         style={{
           transform: "translateZ(75px)",
           transformStyle: "preserve-3d",
         }}
-        className="absolute inset-4 grid place-content-center rounded-xl bg-light shadow-lg"
+        className="absolute inset-4 grid place-content-center rounded-xl bg-gray-900 shadow-lg"
       >
         <img src={image}
           style={{
@@ -65,7 +65,7 @@ const WorkCard = ({ image, content, info}) => {
           style={{
             transform: "translateZ(50px)",
           }}
-          className="text-center text-dark text-3xl font-bold"
+          className="text-center text-light text-3xl font-bold"
         >
           {content}
         </p>
@@ -73,7 +73,7 @@ const WorkCard = ({ image, content, info}) => {
           style={{
             transform: "translateZ(50px)",
           }}
-          className="text-center text-violet text-xl font-semibold"
+          className="text-center text-light text-xl font-semibold"
         >
           {info}
         </p>

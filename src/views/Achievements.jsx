@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import ParticleRing from '../components/ParticleRing';
+import ParticleRingAchievements from '../components/ParticleRingAchievement';
 
 export default function Achievements({setProgress}) {
 
@@ -10,6 +11,6 @@ export default function Achievements({setProgress}) {
     }, 500)
   }, [])
   return (
-    <ParticleRing title = "Achievements"/>
+    <ParticleRingAchievements title = "Achievements"/>
   )
 }

@@ -21,7 +21,7 @@ const Fields = () => {
           })}
         </motion.div>
       </div>
-      <div className="absolute right-40 bottom-40 text-4xl font-semibold text-light font-paratext">and many more...</div>
+      <div className="absolute right-10 bottom-40 text-4xl font-semibold text-light font-paratext">and many more...</div>
     </section>
   );
 };
@@ -75,24 +75,24 @@ const cards = [
     title: "AR/VR",
     id: 4,
   },
-  {
-    url: "robotics.jpg",
-    title: "Robotics",
-    id: 5,
-  },
+  // {
+  //   url: "robotics.jpg",
+  //   title: "Robotics",
+  //   id: 5,
+  // },
   {
     url: "os.webp",
     title: "Open Src",
-    id: 6,
+    id: 5,
   },
   {
     url: "cs.jpg",
     title: "CyberSec",
-    id: 7,
+    id: 6,
   },
   {
     url: "3d.avif",
     title: "3D",
-    id: 8,
+    id: 7,
   },
 ];

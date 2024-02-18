@@ -84,7 +84,7 @@ function Navbar() {
                 transition={{ duration: 0.5 }}
               >
                 <div className='tracking-widest text-3xl text-center text-light font-bold font-subhead'>
-                  <img src="/byte-logo-transparent.png" alt="byte" />
+                  <img src="byte-logo-transparent.png" alt="byte" />
                   B.Y.T.E.
                 </div>
                 <NavItem selected={selected === 0} id={0} setSelected={setSelected}>

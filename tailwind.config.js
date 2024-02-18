@@ -13,7 +13,7 @@ export default {
         light: '#F6F5F3',
         dark: '#0A0A0A',
         purple: '#D00858',
-        yellow: '#4afaab',
+        yellow: '#cdd008',
         violet: '#0c202a'
       }
     }
