@@ -36,8 +36,8 @@ const NavbarTop = () => {
           </div>
         </div>
         {isOpen && (
-          <div className="sm:hidden bg-black mt-2">
-            <NavLink exact to="/home" activeClassName="bg-gray-700" className="block text-white hover:bg-gray-700 px-4 py-2">Home</NavLink>
+          <div className=" sm:hidden bg-black mt-2">
+            <NavLink exact to="/home" activeClassName="bg-gray-700" className="block text-white hover:bg-gray-700 px-4 py-2 mt-10 ">Home</NavLink>
             <NavLink to="/about" activeClassName="bg-gray-700" className="block text-white hover:bg-gray-700 px-4 py-2">About</NavLink>
             <NavLink to="/achievements" activeClassName="bg-gray-700" className="block text-white hover:bg-gray-700 px-4 py-2">Achievements</NavLink>
             <NavLink to="/tasks" activeClassName="bg-gray-700" className="block text-white hover:bg-gray-700 px-4 py-2">Challenges</NavLink>
