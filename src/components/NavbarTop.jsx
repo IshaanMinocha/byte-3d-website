@@ -4,12 +4,15 @@ import ModelViewerTwo from './ModelViewerTwo';
 
 const NavbarTop = () => {
   return (
-    <nav className="bg-black">
+    <nav className="bg-black pb-5 relative">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0 text-white">
-            <img src="byte-logo-transparent.png" className='w-20 p-4' alt="" />
-            <div className='fixed top-20 -right-20 z-30'>
+            {/* <img src="byte-logo-transparent.png" className='w-20 p-4' alt="" /> */}
+            {/* <div className='fixed top-20 -right-20 z-30'>
+              <ModelViewerTwo />
+            </div> */}
+            <div className='fixed -top-7 -left-20 z-30'>
               <ModelViewerTwo />
             </div>
           </div>
