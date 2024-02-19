@@ -36,12 +36,12 @@ const ParticleRingAchievements = ({ title }) => {
       heading: `HackXtreme '23 Winners`,
       projectLink: 'https://example.com/project2'
     },
-    {
-      id: 5,
-      image: acht,
-      heading: `TechnoHacks Runner Ups`,
-      projectLink: 'https://example.com/project2'
-    },
+    // {
+    //   id: 5,
+    //   image: acht,
+    //   heading: `TechnoHacks Runner Ups`,
+    //   projectLink: 'https://example.com/project2'
+    // },
     {
       id: 5,
       image: achhwm,
@@ -71,7 +71,7 @@ const ParticleRingAchievements = ({ title }) => {
         <PointCircle />
       </Canvas>
 
-      <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-slate-200 font-medium pointer-events-none z-2" style={{ overflowX: 'scroll',width: "90%", height: "500px"}}>
+      <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-slate-200 font-medium pointer-events-none z-2" style={{ }}>
         <div className="bg-gray-900 bg-opacity-50 p-4">
 
           <h1 className="text-4xl">
