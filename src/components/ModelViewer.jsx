@@ -2,21 +2,19 @@ import React, { Suspense, useState } from 'react';
 import { Canvas, useLoader, useFrame } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
-const ModelViewer = () => {
+const ModelViewerTwo = () => {
   return (
-    <div className=''>
-    <Canvas style={{width: '100px', height: "100px"}}>
+    <Canvas>
       <Suspense fallback={null}>
         <Model />
       </Suspense>
     </Canvas>
-    </div>
   );
 };
 
 const Model = () => {
   return (
-    <group position={[-5,0,0]}>
+    <group>
       <ambientLight intensity={0} position={[0, 0.5, 0]} color="green" />
       <pointLight intensity={100} position={[1, 1, 3]} />
       <ModelContent />
@@ -30,19 +28,22 @@ const ModelContent = () => {
 
   const gltf = useLoader(GLTFLoader, gltfUrl);
 
-  useFrame(() => { 
+  useFrame(() => {
     gltf.scene.rotation.y += 0.01; // Rotate the model on the y-axis
   });
 
   return (
-
-    <primitive
-      object={gltf.scene}
-      scale={hovered ? [1.25, 1.25, 1.25] : [1, 1, 1]} // Increase the size of the model on hover
-      onPointerOver={() => setHovered(true)}
-      onPointerOut={() => setHovered(false)}
-    />
+    <group position={[0, 0, 0]}>
+      <mesh
+        onPointerOver={() => setHovered(true)}
+        onPointerOut={() => setHovered(false)}
+        scale={[0.75, 0.75, 0.5]} // Increase the size of the model on hover
+        // Add transition effect
+      >
+        <primitive object={gltf.scene} />
+      </mesh>
+    </group>
   );
 };
 
-export default ModelViewer;
+export default ModelViewerTwo;
