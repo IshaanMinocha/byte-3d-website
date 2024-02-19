@@ -982,10 +982,12 @@ const UIUXChallenge = () => {
         <div className="p-4 bg-black max-w-3xl   rounded-lg shadow-md m-5 h-screen">
             <h2 className="text-lg font-bold text-gray-300 mb-2">UI/UX Challenge</h2>
             <ul className="list-disc text-gray-200 pl-4">
-                <li>Create screens for onboarding, dashboard, task list, task details, calendar integration, collaboration tools, project tracking and settings.</li>
-                <li>Focus on a clean, intuitive design that enhances productivity and reflects SpaceX branding.</li>
-                <li>Submit a Figma prototype link with a brief rationale for your design choices.</li>
-                <li>Optional: Include a PDF case study detailing your design process and user research.</li>
+                <li>Objective:
+                    Design an E commerce app user flow for android or iOS screen size.</li>
+                <li>Description:
+                    There is no minimum or maximum limit to screen count or any kind of creative concepts beyond a basic app design but it must have at least one complete flow included.</li>
+                <li>Submission:
+                    The submission must be made in the form of the prototype/file link from figma (or any other used platform) with an optional case study/mockup as a PDF.</li>
             </ul>
             <div className="mt-4">
                 <p className="text-gray-300 text-sm">
