@@ -61,7 +61,7 @@ const Navbar = ({ selectedChallenge, handleChallengeChange }) => {
 
 const MLChallenge = () => {
     return (
-        <div className="max-w-3xl mx-auto text-gray-300  p-8 rounded-lg shadow-lg">
+        <div className="sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl w-full mx-auto text-gray-300 p-8">
             <h1 className="text-2xl font-semibold mb-4">Challenge 1: Machine Learning Challenge: Predicting Employee Salaries</h1>
 
             <div>
@@ -321,7 +321,7 @@ predicted[i] = w * X_train[i] + b
 
 const WebFrontendChallenge = () => {
     return (
-        <div className="max-w-3xl mx-auto text-gray-300 p-8">
+        <div className="sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl w-full mx-auto text-gray-300 p-8">
             <h1 className="text-xl mb-4"><span className='text-green-500 font-bold text-2xl'>What we expect: </span>
                 Create a web application and connect it to the backend server hosted at:
             </h1>
@@ -334,7 +334,7 @@ const WebFrontendChallenge = () => {
             <span className='text-green-500'>Below is an example to refer and you can always reach out to us for any doubts.  Happy Developing!!</span>
 
             <h1 className='text-xl my-6 text-white'>Reference Video:</h1>
-            <div className="video-container flex gap-2 my-4">
+            <div className="video-container flex gap-2 my-4 flex-wrap">
                 <iframe width="300" height="200" src="https://www.youtube.com/embed/fXMpu_42jJA" title="Website Demo for Poems API- BYTE Challenges" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <iframe width="300" height="200" src="https://www.youtube.com/embed/Q0SniedHDWU" title="API Demo for Backend Challenges - B.Y.T.E." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -591,7 +591,7 @@ const WebFrontendChallenge = () => {
 
 const AppFrontendChallenge = () => {
     return (
-        <div className="max-w-3xl mx-auto text-gray-300 p-8">
+        <div className="sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl w-full mx-auto text-gray-300 p-8">
             <h1 className="text-xl mb-4"><span className='text-green-500 font-bold text-2xl'>What we expect: </span>
                 Create a mobile application and connect it to the backend server hosted at:
             </h1>
@@ -604,7 +604,7 @@ const AppFrontendChallenge = () => {
             <span className='text-green-500'>Below is an example to refer and you can always reach out to us for any doubts.  Happy Developing!!</span>
 
             <h1 className='text-xl my-6 text-white'>Reference Video:</h1>
-            <div className="video-container flex gap-2 my-4">
+            <div className="video-container flex gap-2 my-4 flex-wrap">
                 <iframe width="300" height="200" src="https://www.youtube.com/embed/XdbIsETz2mw" title="App Demo for Poems API - BYTE | Frontend Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <iframe width="300" height="200" src="https://www.youtube.com/embed/tm9CPP8C7jw" title="Working of App API for Frontend Challenge - BYTE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -750,7 +750,7 @@ const AppFrontendChallenge = () => {
 
 const BackendChallenge = () => {
     return (
-        <div className="max-w-3xl mx-auto text-gray-300 p-8">
+        <div className="sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl w-full mx-auto text-gray-300 p-8">
             <h1 className="text-xl mb-4"><span className='text-green-500 font-bold text-2xl'>What we expect: </span>
                 Create a backend server with user authentication and a RESTful API for managing poems. Users shall be able to create poems, retrieve all poems, and retrieve poems created by a specific user using the API.</h1>
 
@@ -1004,7 +1004,7 @@ const UIUXChallenge = () => {
 
 const IoTChallenge = () => {
     return (
-        <div className='max-w-3xl mx-auto text-gray-300 p-8'>
+        <div className="sm:max-w-3xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl w-full mx-auto text-gray-300 p-8">
             <h1 className="text-xl mb-4"><span className='text-green-500 font-bold text-2xl'>What we expect: </span>
                 <br />
                 Basic :  Arduino Circuit and C/C++ Programming
@@ -1092,7 +1092,9 @@ void loop() {
                             Rust installation instructions and coding guidelines are provided for the second part of the task. Wowki is introduced as an alternative platform for participants without hardware.
                         </p>
                         <h4 className="text-lg font-bold mb-2">3.2.3 Code Snippet</h4>
-                        <pre className="bg-black text-green-500 p-4 rounded-md"><code>{`
+                        <div className="overflow-x-auto">
+                            <pre className="bg-black text-green-500 p-4 rounded-md whitespace-pre-wrap">
+                                <code>{`
 extern crate rppal;
 use rppal::gpio::{Gpio, Level};
 use std::thread;
@@ -1109,7 +1111,10 @@ fn main() {
         thread::sleep(Duration::from_secs(1)); // Wait for 1 second
     }
 }
-                    `}</code></pre>
+    `}</code>
+                            </pre>
+                        </div>
+
                     </section>
                 </section>
                 <section className="mb-8">
