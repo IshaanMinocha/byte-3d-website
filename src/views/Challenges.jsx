@@ -1017,8 +1017,7 @@ const IoTChallenge = () => {
                 <h1 className='text-xl my-6 text-white'>Reference Video:</h1>
                 <div className="video-container flex gap-2 my-4">
                     <iframe width="300" height="200" src="https://www.youtube.com/embed/_5fUDcr7Gvw" title="RUST Code Demo- BYTE Iot Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <iframe width="300" height="200" src="https://www.youtube.com/embed/z8CDhgvwywE" title="TinkerCAD Demo - BYTE Iot Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+                   
                 </div>
                 <h1 className="text-2xl font-bold mb-4">Research Paper: Exploring Internet of Things (IoT) with Arduino and Rust</h1>
                 <section className="mb-8">
