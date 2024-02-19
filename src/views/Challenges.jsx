@@ -61,7 +61,7 @@ const Navbar = ({ selectedChallenge, handleChallengeChange }) => {
 
 const MLChallenge = () => {
     return (
-        <div className="max-w-3xl mx-auto  p-8 rounded-lg shadow-lg">
+        <div className="max-w-3xl mx-auto text-gray-300  p-8 rounded-lg shadow-lg">
             <h1 className="text-2xl font-semibold mb-4">Challenge 1: Machine Learning Challenge: Predicting Employee Salaries</h1>
 
             <div>
@@ -321,7 +321,7 @@ predicted[i] = w * X_train[i] + b
 
 const WebFrontendChallenge = () => {
     return (
-        <div className="max-w-3xl mx-auto p-8">
+        <div className="max-w-3xl mx-auto text-gray-300 p-8">
             <h1 className="text-xl mb-4"><span className='text-green-500 font-bold text-2xl'>What we expect: </span>
                 Create a web application and connect it to the backend server hosted at:
             </h1>
@@ -591,7 +591,7 @@ const WebFrontendChallenge = () => {
 
 const AppFrontendChallenge = () => {
     return (
-        <div className="max-w-3xl mx-auto p-8">
+        <div className="max-w-3xl mx-auto text-gray-300 p-8">
             <h1 className="text-xl mb-4"><span className='text-green-500 font-bold text-2xl'>What we expect: </span>
                 Create a mobile application and connect it to the backend server hosted at:
             </h1>
@@ -750,7 +750,7 @@ const AppFrontendChallenge = () => {
 
 const BackendChallenge = () => {
     return (
-        <div className="max-w-3xl mx-auto p-8">
+        <div className="max-w-3xl mx-auto text-gray-300 p-8">
             <h1 className="text-xl mb-4"><span className='text-green-500 font-bold text-2xl'>What we expect: </span>
                 Create a backend server with user authentication and a RESTful API for managing poems. Users shall be able to create poems, retrieve all poems, and retrieve poems created by a specific user using the API.</h1>
 
@@ -1004,7 +1004,7 @@ const UIUXChallenge = () => {
 
 const IoTChallenge = () => {
     return (
-        <div className='max-w-3xl mx-auto p-8'>
+        <div className='max-w-3xl mx-auto text-gray-300 p-8'>
             <h1 className="text-xl mb-4"><span className='text-green-500 font-bold text-2xl'>What we expect: </span>
                 <br />
                 Basic :  Arduino Circuit and C/C++ Programming

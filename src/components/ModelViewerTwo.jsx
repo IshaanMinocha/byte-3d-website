@@ -37,9 +37,8 @@ const ModelContent = () => {
       <mesh
         onPointerOver={() => setHovered(true)}
         onPointerOut={() => setHovered(false)}
-        scale={hovered ? [1.25, 1.25, 1.25] : [1, 1, 1]} // Increase the size of the model on hover
+        scale={[0.75, 0.75, 0.5]} // Increase the size of the model on hover
         // Add transition effect
-        transition={{ scale: { duration: 0.5 } }}
       >
         <primitive object={gltf.scene} />
       </mesh>

@@ -36,7 +36,7 @@ function Index() {
         </motion.div>
     ) : (
 
-        <div className='w-screen h-screen flex items-center justify-center'>
+        <div className='w-screen h-screen flex items-center justify-center bg-black'>
             <Spline scene="https://prod.spline.design/WYNe8QHf-WB56UIe/scene.splinecode" />
         </div>
     )
