@@ -107,7 +107,7 @@ function Hero() {
 
   return (
     <>
-      <div className="h-screen w-screen ] bg-no-repeat  bg-fixed  bg-blend-multiply">
+      <div className="h-screen w-screen bg-[url(bg.jpg)] bg-no-repeat bg-fixed bg-blend-multiply bg-gray-900 bg-opacity-90">
         {/* <canvas className="w-screen h-screen fixed top-0 left-0" ref={canvasRef} /> */}
         <div className="hidden sm:block">
 
