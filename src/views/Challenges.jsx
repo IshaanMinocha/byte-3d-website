@@ -62,8 +62,8 @@ const Navbar = ({ selectedChallenge, handleChallengeChange }) => {
 const MLChallenge = () => {
     return (
         <div className="max-w-3xl mx-auto  p-8 rounded-lg shadow-lg">
-                <h1 className="text-2xl font-semibold mb-4">Challenge 1: Machine Learning Challenge: Predicting Employee Salaries</h1>
-            
+            <h1 className="text-2xl font-semibold mb-4">Challenge 1: Machine Learning Challenge: Predicting Employee Salaries</h1>
+
             <div>
 
                 <h2 className="text-xl font-semibold mb-2">Problem Statement:</h2>
@@ -75,6 +75,7 @@ const MLChallenge = () => {
                     <li>Your task is to predict the salary based on the employee's past experience using linear regression.</li>
                     <li>Complete the given functions to implement linear regression.</li>
                     <ul className='underline text-green-500'>
+                        <li><a target='_blank' href="https://colab.research.google.com/drive/1pSwznkYoo0r3VZwgu7DFHBZxvh3Nms2P?usp=sharing" download>Click Here to edit directly in the Google Collab file</a></li>
                         <li><a href="/implementation.ipynb" download>Click Here to download .ipynb file</a></li>
                         <li><a href="/implementation.py" download>Click Here to download .py file</a></li>
                         <li><a href="/implementation.pdf" download>More submission instructions and reference materials</a></li>
@@ -258,7 +259,8 @@ predicted[i] = w * X_train[i] + b
                     </code>
                 </pre>
 
-                <h2 className="text-xl font-semibold mb-2">Predict Output on Input Values:</h2>
+                <h2 className="text-xl font-s
+                emibold mb-2">Predict Output on Input Values:</h2>
                 <pre className="whitespace-pre-wrap bg-black p-2 text-green-500">
                     <code>
                         {`# Predict output on input values [17.0, 50.0]
@@ -1004,7 +1006,7 @@ const IoTChallenge = () => {
     return (
         <div className='max-w-3xl mx-auto p-8'>
             <h1 className="text-xl mb-4"><span className='text-green-500 font-bold text-2xl'>What we expect: </span>
-            <br />
+                <br />
                 Basic :  Arduino Circuit and C/C++ Programming
                 <br />Advanced :  Rust Programming on Ubuntu or Wowki
             </h1>
@@ -1017,7 +1019,8 @@ const IoTChallenge = () => {
                 <h1 className='text-xl my-6 text-white'>Reference Video:</h1>
                 <div className="video-container flex gap-2 my-4">
                     <iframe width="300" height="200" src="https://www.youtube.com/embed/_5fUDcr7Gvw" title="RUST Code Demo- BYTE Iot Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                   
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/z8CDhgvwywE" title="TinkerCAD Demo - BYTE Iot Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
                 </div>
                 <h1 className="text-2xl font-bold mb-4">Research Paper: Exploring Internet of Things (IoT) with Arduino and Rust</h1>
                 <section className="mb-8">
