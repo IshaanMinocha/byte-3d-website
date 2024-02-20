@@ -990,6 +990,8 @@ const UIUXChallenge = () => {
                     There is no minimum or maximum limit to screen count or any kind of creative concepts beyond a basic app design but it must have at least one complete flow included.</li>
                 <li>Submission:
                     The submission must be made in the form of the prototype/file link from figma (or any other used platform) with an optional case study/mockup as a PDF.</li>
+
+                <p>Upon completion, please submit it to the submission form <a className='underline text-green-500' target='_blank' href="https://forms.gle/vnGE7aMLzuEJv49n8">https://forms.gle/vnGE7aMLzuEJv49n8</a> </p>
             </ul>
             <div className="mt-4">
                 <p className="text-gray-300 text-sm">
@@ -1010,6 +1012,7 @@ const IoTChallenge = () => {
                 Basic :  Arduino Circuit and C/C++ Programming
                 <br />Advanced :  Rust Programming on Ubuntu or Wowki
             </h1>
+            <p>Upon completion, please submit the prototype video and github link to the submission form <a className='underline text-green-500' target='_blank' href="https://forms.gle/vnGE7aMLzuEJv49n8">https://forms.gle/vnGE7aMLzuEJv49n8</a> </p>
             <span className='text-green-500'>Below is an example to refer and you can always reach out to us for any doubts.  Happy Developing!!</span>
             <div className=" p-8 rounded-lg shadow-lg">
 
