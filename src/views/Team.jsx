@@ -107,24 +107,24 @@ const Card = ({ role, name, Image, quote, ig, gh, lin }) => {
       onMouseLeave={() => setShowIcons(false)}
     >
       <div className="absolute inset-0 bg-green-600 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
-      <img className="absolute z-10 -top-20 -right-20 text-9xl text-slate-100 group-hover:text-violet-400 group-hover:rotate-12 transition-transform duration-300" src={Image} alt="1" />
-      <p className="mb-2 text-2xl text-violet font-subhead group-hover:text-white transition-colors relative z-10 duration-300">{name}</p>
+      <img className="absolute select-none z-10 -top-20 -right-20 text-9xl text-slate-100 group-hover:rotate-12 transition-transform duration-300" src={Image} alt="1" />
+      <p className="mb-2 text-2xl text-dark font-subhead group-hover:text-white transition-colors relative z-10 duration-300">{name}</p>
       <h3 className="font-medium text-lg text-slate-950 group-hover:text-white relative z-10 duration-300">{role}</h3>
       {quote && (
-        <p className={"text-violet font-semibold text-xl z-10 duration-300 absolute bottom-12"}>
+        <p className={"text-dark font-semibold text-xl z-10 duration-300 absolute bottom-12"}>
           {quote}
         </p>
       )}
       {showIcons && (
         <div className="absolute bottom-4 left-4 flex gap-4 z-10">
           <a href={gh} target="_blank" rel="noopener noreferrer">
-            <FaGithub className="text-violet text-3xl hover:text-white transition-colors duration-50" />
+            <FaGithub className="text-dark text-3xl hover:text-white transition-colors duration-50" />
           </a>
           <a href={ig} target="_blank" rel="noopener noreferrer">
-            <FaInstagram className="text-violet text-3xl hover:text-white transition-colors duration-50" />
+            <FaInstagram className="text-dark text-3xl hover:text-white transition-colors duration-50" />
           </a>
           <a href={lin} target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="text-violet text-3xl hover:text-white transition-colors duration-50" />
+            <FaLinkedin className="text-dark text-3xl hover:text-white transition-colors duration-50" />
           </a>
         </div>
       )}
