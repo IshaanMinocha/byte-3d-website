@@ -12,84 +12,84 @@ export default function Team({ setProgress }) {
     <div className="p-4">
       <p className="text-5xl font-bold text-center tracking-widest font-heading text-light my-10">Our Team</p>
       <div className='mb-10'>
-        <p className="text-5xl tracking-wider text-green-600 font-semibold my-10">admins</p>
+        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">admins</p>
         <div className="grid grid-cols-3 justify-items-center">
-          <Card role="Competitive Admin" name="Ishaan Minocha" Image={"ishu.png"} quote={"kuch quote or somethin"} ig="https://www.instagram.com/ishaantrovert" gh="https://github.com/IshaanMinocha" lin="https://www.linkedin.com/ishaanminocha" />
-          <Card role="Research Admin" name="Shivam Kumar Jha" Image={""} quote={"kaalu"} />
-          <Card role="Community Admin" name="Abir Thakur" Image={""} quote={"rizzgod"} />
-          <Card role="Frontend Head" name="Aman Sharma" Image={""} quote={"kaalu"} />
-          <Card role="Backend Head" name="Chanmeet Singh" Image={""} quote={"rizzgod"} />
-          <Card role="PR Head" name="Ansh Kapila" Image={""} quote={"kaalu"} />
-          <Card role="Web Head" name="Subhasish Panda" Image={""} quote={"rizzgod"} />
-          <Card role="ML Head" name="Haaris Huda" Image={""} quote={"kaalu"} />
-          <Card role="IOT Head" name="Chayan Khetan" Image={""} quote={"rizzgod"} />
+          <Card role="Competitive Admin" name="Ishaan Minocha" Image={"ishu.png"} quote={"codes metaverse in vanilla css"} ig="https://www.instagram.com/ishaantrovert" gh="https://github.com/IshaanMinocha" lin="https://www.linkedin.com/ishaanminocha" />
+          <Card role="Research Admin" name="Shivam Kumar Jha" Image={""} quote={"smthn"} />
+          <Card role="Community Admin" name="Abir Thakur" Image={""} quote={"smthn"} />
+          <Card role="" name="Aman Sharma" Image={""} quote={"smthn"} />
+          <Card role="" name="Chanmeet Singh" Image={""} quote={"smthn"} />
+          <Card role="" name="Ansh Kapila" Image={""} quote={"smthn"} />
+          <Card role="" name="Subhasish Panda" Image={""} quote={"smthn"} />
+          <Card role="" name="Haaris Huda" Image={""} quote={"smthn"} />
+          <Card role="" name="Chayan Khetan" Image={""} quote={"smthn"} />
         </div>
       </div>
       <div className='mb-10'>
-        <p className="text-5xl tracking-wider text-green-600 font-semibold my-10">web department</p>
-        <div className="grid grid-cols-3 justify-items-center">
+        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">web department</p>
+        <div className="grid grid-cols-4 justify-items-center">
           <Card role="" name="Adisht Jaglan" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Garvit" Image={""} quote={"kaalu"} />
-          <Card role="" name="Shivank" Image={""} quote={"rizzgod"} />
-          <Card role="" name="Sagar Jain" Image={""} quote={"kaalu"} />
-          <Card role="" name="Pratham Gupta" Image={""} quote={"rizzgod"} />
-          <Card role="" name="Harshill Agarwal" Image={""} quote={"kaalu"} />
-          <Card role="" name="Khushi Minda" Image={""} quote={"rizzgod"} />
-          <Card role="" name="Pratham Gupta" Image={""} quote={"kaalu"} />
+          <Card role="" name="Garvit" Image={""} quote={"smthn"} />
+          <Card role="" name="Shivank" Image={""} quote={"smthn"} />
+          <Card role="" name="Harshill Agarwal" Image={""} quote={"smthn"} />
+          <Card role="" name="Khushi Minda" Image={""} quote={"smthn"} />
+          <Card role="" name="Pratham Gupta" Image={""} quote={"smthn"} />
+          <Card role="" name="Sagar Jain" Image={""} quote={"smthn"} />
+          <Card role="" name="Shrey Garg" Image={""} quote={"smthn"} />
         </div>
       </div>
       <div className='mb-10'>
-        <p className="text-5xl tracking-wider text-green-600 font-semibold my-10">app department</p>
-        <div className="grid grid-cols-3 justify-items-center">
-          <Card role="" name="Ravi Banchhiwal" Image={""} quote={"ghungrale"} ig="" gh="" lin="" />
-          <Card role="" name="Chinmay Nandawat" Image={""} quote={"kaalu"} />
+        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">app department</p>
+        <div className="grid grid-cols-4 justify-items-center">
+          <Card role="" name="Ravi Banchhiwal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Chinmay Nandawat" Image={""} quote={"smthn"} />
         </div>
       </div>
       <div className='mb-10'>
-        <p className="text-5xl tracking-wider text-green-600 font-semibold my-10">ml department</p>
-        <div className="grid grid-cols-3 justify-items-center">
-          <Card role="" name="Piyush Mittal" Image={""} quote={"ghungrale"} ig="" gh="" lin="" />
-          <Card role="" name="Ujwal Gupta" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
-          <Card role="" name="Chayan Mann" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
-          <Card role="" name="Anushka Singh" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
-          <Card role="" name="Shivam Gupta" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
-          <Card role="" name="Nalin Khanna" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
-          <Card role="" name="Shorya" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
+        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">ml department</p>
+        <div className="grid grid-cols-4 justify-items-center">
+          <Card role="" name="Piyush Mittal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Ujwal Gupta" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Chayan Mann" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Anushka Singh" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Shivam Gupta" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Nalin Khanna" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Shorya" Image={""} quote={"smthn"} ig="" gh="" lin="" />
         </div>
       </div>
       <div className='mb-10'>
-        <p className="text-5xl tracking-wider text-green-600 font-semibold my-10">iot department</p>
-        <div className="grid grid-cols-3 justify-items-center">
-          <Card role="" name="Arnav Chopra" Image={""} quote={"ghungrale"} ig="" gh="" lin="" />
-          <Card role="" name="Kamaruchi Rachit Kumar" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
-          <Card role="" name="Tanush Panwar" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
-          <Card role="" name="Ashish Negi" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
+        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">iot department</p>
+        <div className="grid grid-cols-4 justify-items-center">
+          <Card role="" name="Arnav Chopra" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Kamaruchi Rachit Kumar" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Tanush Panwar" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Ashish Negi" Image={""} quote={"smthn"} ig="" gh="" lin="" />
         </div>
       </div>
       <div className='mb-10'>
-        <p className="text-5xl tracking-wider text-green-600 font-semibold my-10">cp department</p>
-        <div className="grid grid-cols-3 justify-items-center">
-          <Card role="" name="Ansh Jain" Image={""} quote={"ghungrale"} ig="" gh="" lin="" />
-          <Card role="" name="Abhinav Gupta" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
-          <Card role="" name="Ashwin Bansal" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
-          <Card role="" name="Rishi Agarwal" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
+        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">cp department</p>
+        <div className="grid grid-cols-4 justify-items-center">
+          <Card role="" name="Ansh Jain" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Abhinav Gupta" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Ashwin Bansal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Rishi Agarwal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
         </div>
       </div>
       <div className='mb-10'>
-        <p className="text-5xl tracking-wider text-green-600 font-semibold my-10">ui/ux department</p>
-        <div className="grid grid-cols-3 justify-items-center">
-          <Card role="" name="Mayank Bhatia" Image={""} quote={"ghungrale"} ig="" gh="" lin="" />
-          <Card role="" name="Anisha Dua" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
-          <Card role="" name="Pranjal Chopra" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
-          <Card role="" name="Vipul Kohli" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
-          <Card role="" name="Swasti" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
-          <Card role="" name="Vidhi Gupta" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
+        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">ui/ux department</p>
+        <div className="grid grid-cols-4 justify-items-center">
+          <Card role="" name="Mayank Bhatia" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Anisha Dua" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Pranjal Chopra" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Vipul Kohli" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Swasti" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Vidhi Gupta" Image={""} quote={"smthn"} ig="" gh="" lin="" />
         </div>
       </div>
       <div>
-        <div className='text-2xl text-center tracking-wider text-green-600 my-5'>wanna get aboard?</div>
+        <div className='text-4xl text-center tracking-wide text-green-600 my-10'>wanna get aboard?</div>
         <a href='/' className='grid justify-items-center'>
-          <button className="px-6 py-2 font-semibold bg-purple text-light w-fit transition-all shadow-[3px_3px_0px_black] active:shadow-none active:translate-x-[3px] hover:text-dark active:translate-y-[3px] ">
+          <button className="px-6 py-2 mb-10 font-semibold bg-purple text-light w-fit transition-all shadow-[3px_3px_0px_black] active:shadow-none active:translate-x-[3px] hover:text-dark active:translate-y-[3px] ">
             Join Us!
           </button>
         </a>
