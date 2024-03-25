@@ -67,6 +67,15 @@ export default function Team({ setProgress }) {
         </div>
       </div>
       <div className='mb-10'>
+        <p className="text-5xl tracking-wider text-green-600 font-semibold my-10">cp department</p>
+        <div className="grid grid-cols-3 justify-items-center">
+          <Card role="" name="Ansh Jain" Image={""} quote={"ghungrale"} ig="" gh="" lin="" />
+          <Card role="" name="Abhinav Gupta" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
+          <Card role="" name="Ashwin Bansal" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
+          <Card role="" name="Rishi Agarwal" Image={""} quote={"kaalu"} ig="" gh="" lin="" />
+        </div>
+      </div>
+      <div className='mb-10'>
         <p className="text-5xl tracking-wider text-green-600 font-semibold my-10">ui/ux department</p>
         <div className="grid grid-cols-3 justify-items-center">
           <Card role="" name="Mayank Bhatia" Image={""} quote={"ghungrale"} ig="" gh="" lin="" />
