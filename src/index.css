@@ -29,3 +29,7 @@ html {
 *{
     transition: all 0.2s linear;
 }
+
+  .non-draggable {
+    -webkit-user-drag: none; 
+  }
