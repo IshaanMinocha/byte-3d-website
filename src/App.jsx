@@ -28,23 +28,18 @@ export default function App() {
           onLoaderFinished={() => setProgress(0)}
         />
         <Routes>
-          {/* <Route path="/loader" element={<Loader setProgress={setProgress} />} /> */}
-          <Route path="/" element={<Home setProgress={setProgress}/>} />
-          {/* <Route path="/home" element={<Home setProgress={setProgress} />} /> */}
+          <Route path="/" element={<Home setProgress={setProgress} />} />
           <Route path="/about" element={<About setProgress={setProgress} />} />
           <Route path="/achievements" element={<Achievements setProgress={setProgress} />} />
           <Route path="/projects" element={<Projects setProgress={setProgress} />} />
           <Route path="/tasks" element={<Tasks />} />
-          {/* <Route path="/contact" element={<Contact setProgress={setProgress} />} /> */}
           <Route path="/team" element={<Team setProgress={setProgress} />} />
-          {/* <Route path="/join" element={<Join setProgress={setProgress} />} /> */}
           <Route path="*" element={<Navigate to="/404" />} />
-          <Route path="/404" element={<Error404/>} />
+          <Route path="/404" element={<Error404 />} />
         </Routes>
-        <Easter/>
+        <Easter />
         <BackToTop />
-        {/* <Footer/> */}
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </>
   )
