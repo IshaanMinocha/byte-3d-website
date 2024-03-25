@@ -2,13 +2,9 @@ import Home from './views/Home';
 import About from './views/About';
 import Achievements from './views/Achievements';
 import Projects from './views/Projects';
-import Index from './views/Index';
 import Team from './views/Team';
-import Contact from './views/Contact';
 import Tasks from './views/Tasks';
-import Join from './views/Join';
 import Error404 from './views/Error404';
-import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import LoadingBar from 'react-top-loading-bar'
@@ -16,7 +12,6 @@ import { useState } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import Easter from './components/Easter';
 import NavbarTop from './components/NavbarTop';
-import ModelViewer from './components/ModelViewer';
 
 export default function App() {
 
@@ -34,8 +29,8 @@ export default function App() {
         />
         <Routes>
           {/* <Route path="/loader" element={<Loader setProgress={setProgress} />} /> */}
-          <Route path="/" element={<Index />} />
-          <Route path="/home" element={<Home setProgress={setProgress} />} />
+          <Route path="/" element={<Home setProgress={setProgress}/>} />
+          {/* <Route path="/home" element={<Home setProgress={setProgress} />} /> */}
           <Route path="/about" element={<About setProgress={setProgress} />} />
           <Route path="/achievements" element={<Achievements setProgress={setProgress} />} />
           <Route path="/projects" element={<Projects setProgress={setProgress} />} />

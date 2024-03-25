@@ -14,7 +14,7 @@ function Error404() {
     }, 1000);
 
     const redirectTimeout = setTimeout(() => {
-      window.location.replace('/home');
+      window.location.replace('/');
     }, 10000);
 
     return () => {
@@ -60,7 +60,7 @@ function Error404() {
             The Matrix glitched. We are sending you back to the BYTE realm!
           </p>
           <div className="text-2xl mb-6 text-center text-neutral-400">
-            Redirecting to <Link className="font-semibold text-light text-3xl rounded-full hover:bg-light/10 p-2" to="/home">Home</Link> in {timer} seconds.
+            Redirecting to <Link className="font-semibold text-light text-3xl rounded-full hover:bg-light/10 p-2" to="/">Home</Link> in {timer} seconds.
           </div>
         </div>
         <motion.div
