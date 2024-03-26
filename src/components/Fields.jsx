@@ -66,14 +66,19 @@ const cards = [
     id: 2,
   },
   {
+    url: "ML.jpg",
+    title: "ML",
+    id: 3,
+  },
+  {
     url: "iot.avif",
     title: "IOT",
-    id: 3,
+    id: 4,
   },
   {
     url: "arvr.webp",
     title: "AR/VR",
-    id: 4,
+    id: 5,
   },
   // {
   //   url: "robotics.jpg",
@@ -83,16 +88,16 @@ const cards = [
   {
     url: "os.webp",
     title: "Open Src",
-    id: 5,
+    id: 6,
   },
   {
     url: "cs.jpg",
     title: "CyberSec",
-    id: 6,
+    id: 7,
   },
   {
     url: "3d.avif",
     title: "3D",
-    id: 7,
+    id: 8,
   },
 ];
