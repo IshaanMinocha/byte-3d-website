@@ -3,9 +3,9 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "./utlis";
 
-const ParticleRing = ({title}) => {
+const ParticleRing = ({content}) => {
   return (
-    <div className="relative"> 
+    <div className="relative -z-10"> 
       <Canvas
         camera={{
           position: [10, -7.5, -5],
@@ -19,9 +19,7 @@ const ParticleRing = ({title}) => {
         <PointCircle />
       </Canvas>
 
-      <h1 className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-slate-200 font-medium text-9xl pointer-events-none">
-        {title}
-      </h1>
+      {content}
     </div>
   );
 };
