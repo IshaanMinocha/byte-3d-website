@@ -116,11 +116,11 @@ function Hero() {
         <div className="sm:hidden rounded-md px-2 py-20 text-center hover:animate-pulse text-7xl font-mono"> B.Y.T.E</div>
         <h1 className="font-heading text-3xl text-center text-green-500 capitalize mb-20  bg-">Solving problems one byte at a time</h1>
         <div className="w-screen flex justify-center gap-10 sm:text-xl px-5">
-          <Link to='/tasks'>
+          {/* <Link to='/tasks'>
             <button className="px-6 py-2 font-semibold bg-purple text-light w-fit transition-all shadow-[3px_3px_0px_black] active:shadow-none active:translate-x-[3px] hover:text-dark active:translate-y-[3px] ">
               Selection Challenges
             </button>
-          </Link>
+          </Link> */}
           <Link to='https://github.com/bytemait'>
             <button className="px-6 py-2 font-semibold bg-purple text-light w-fit transition-all shadow-[3px_3px_0px_black] active:shadow-none active:translate-x-[3px] hover:text-dark active:translate-y-[3px] ">
               Our Projects

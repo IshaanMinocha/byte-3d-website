@@ -3,7 +3,6 @@ import About from './views/About';
 import Achievements from './views/Achievements';
 import Projects from './views/Projects';
 import Team from './views/Team';
-import Tasks from './views/Tasks';
 import Error404 from './views/Error404';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
@@ -32,7 +31,7 @@ export default function App() {
           <Route path="/about" element={<About setProgress={setProgress} />} />
           <Route path="/achievements" element={<Achievements setProgress={setProgress} />} />
           <Route path="/projects" element={<Projects setProgress={setProgress} />} />
-          <Route path="/tasks" element={<Tasks />} />
+          {/* <Route path="/tasks" element={<Tasks />} /> */}
           <Route path="/team" element={<Team setProgress={setProgress} />} />
           <Route path="*" element={<Navigate to="/404" />} />
           <Route path="/404" element={<Error404 />} />
