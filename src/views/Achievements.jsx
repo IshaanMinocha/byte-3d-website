@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import ParticleRing from '../components/ParticleRing';
+import React, { useEffect } from 'react';
 import ParticleRingAchievements from '../components/ParticleRingAchievement';
 
 export default function Achievements({setProgress}) {

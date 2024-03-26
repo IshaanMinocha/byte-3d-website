@@ -3,25 +3,23 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "./utlis";
 
-const ParticleRing = ({title}) => {
+const ParticleRing = ({content}) => {
   return (
     <div className="relative"> 
       <Canvas
         camera={{
           position: [10, -7.5, -5],
-        }}
+        }}z
         style={{ height: "100vh" }}
         className="bg-slate-900"
       >
-        <OrbitControls maxDistance={20} minDistance={10} />
+        <OrbitControls maxDistance={20} minDistance={10} enableZoom={false}/>
         <directionalLight />
         <pointLight position={[-30, 0, -30]} power={10.0} />
         <PointCircle />
       </Canvas>
 
-      <h1 className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-slate-200 font-medium text-9xl pointer-events-none">
-        {title}
-      </h1>
+      {content}
     </div>
   );
 };

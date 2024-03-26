@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react'
-import { motion } from "framer-motion";
-import ParticleRing from '../components/ParticleRing';
+import React, { useEffect } from 'react';
 import ParticleRingAbout from '../components/ParticleRingAbout';
 
 export default function About({ setProgress }) {
