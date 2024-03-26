@@ -24,7 +24,7 @@ const NavbarTop = () => {
             <NavLink exact to="/" activeClassName="bg-gray-700" className="text-white hover:bg-gray-700 px-4 py-4 text-sm font-medium">Home</NavLink>
             <NavLink to="/about" activeClassName="bg-gray-700" className="text-white hover:bg-gray-700 px-4 py-4 text-sm font-medium">About</NavLink>
             <NavLink to="/achievements" activeClassName="bg-gray-700" className="text-white hover:bg-gray-700 px-4 py-4 text-sm font-medium">Achievements</NavLink>
-            <NavLink to="/tasks" activeClassName="bg-gray-700" className="text-white hover:bg-gray-700 px-4 py-4 text-sm font-medium">Challenges</NavLink>
+            {/* <NavLink to="/tasks" activeClassName="bg-gray-700" className="text-white hover:bg-gray-700 px-4 py-4 text-sm font-medium">Challenges</NavLink> */}
             <NavLink to="/team" activeClassName="bg-gray-700" className="text-white hover:bg-gray-700 px-4 py-4 text-sm font-medium">Team</NavLink>
           </div>
           <div className="sm:hidden">
@@ -40,7 +40,7 @@ const NavbarTop = () => {
             <NavLink exact to="/" activeClassName="bg-gray-700" className="block text-white hover:bg-gray-700 px-4 py-2 mt-10 ">Home</NavLink>
             <NavLink to="/about" activeClassName="bg-gray-700" className="block text-white hover:bg-gray-700 px-4 py-2">About</NavLink>
             <NavLink to="/achievements" activeClassName="bg-gray-700" className="block text-white hover:bg-gray-700 px-4 py-2">Achievements</NavLink>
-            <NavLink to="/tasks" activeClassName="bg-gray-700" className="block text-white hover:bg-gray-700 px-4 py-2">Challenges</NavLink>
+            {/* <NavLink to="/tasks" activeClassName="bg-gray-700" className="block text-white hover:bg-gray-700 px-4 py-2">Challenges</NavLink> */}
             <NavLink to="/team" activeClassName="bg-gray-700" className="block text-white hover:bg-gray-700 px-4 py-2">Team</NavLink>
           </div>
         )}
