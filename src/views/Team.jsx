@@ -31,7 +31,7 @@ export default function Team({ setProgress }) {
           <Card role="" name="Adisht Jaglan" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Garvit" Image={""} quote={"smthn"} />
           <Card role="" name="Shivank" Image={""} quote={"smthn"} />
-          <Card role="" name="Harshill Agarwal" Image={""} quote={"smthn"} />
+          <Card role="" name="Harshill Aggarwal" Image={""} quote={"smthn"} />
           <Card role="" name="Khushi Minda" Image={""} quote={"smthn"} />
           <Card role="" name="Pratham Gupta" Image={""} quote={"smthn"} />
           <Card role="" name="Sagar Jain" Image={""} quote={"smthn"} />
