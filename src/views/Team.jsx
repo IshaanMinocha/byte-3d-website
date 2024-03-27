@@ -9,11 +9,11 @@ export default function Team({ setProgress }) {
     }, 500)
   }, [])
   return (
-    <div className="p-4">
-      <p className="text-5xl font-bold text-center tracking-widest font-heading text-light my-10">Our Team</p>
-      <div className='mb-10'>
-        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">admins</p>
-        <div className="grid grid-cols-3 justify-items-center">
+    <div className="p-4 bg-gray-800">
+      <p className="text-5xl font-bold text-center tracking-widest font-heading text-green-500 my-10">Our Team</p>
+      <div className='mb-16'>
+        <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">Admins</h4>
+        <div className="flex flex-wrap justify-center xl:gap-20 gap-12">
           <Card role="Competitive Admin" name="Ishaan Minocha" Image={"ishu.png"} quote={"codes metaverse in vanilla css"} ig="https://www.instagram.com/ishaantrovert" gh="https://github.com/IshaanMinocha" lin="https://www.linkedin.com/ishaanminocha" />
           <Card role="Research Admin" name="Shivam Kumar Jha" Image={""} quote={"smthn"} />
           <Card role="Community Admin" name="Abir Thakur" Image={""} quote={"smthn"} />
@@ -25,9 +25,9 @@ export default function Team({ setProgress }) {
           <Card role="" name="Chayan Khetan" Image={""} quote={"smthn"} />
         </div>
       </div>
-      <div className='mb-10'>
-        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">web department</p>
-        <div className="grid grid-cols-4 justify-items-center">
+      <div className='mb-14'>
+      <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto text-center w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">Web Department</h4>
+        <div className="flex flex-wrap justify-center gap-8">
           <Card role="" name="Adisht Jaglan" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Garvit" Image={""} quote={"smthn"} />
           <Card role="" name="Shivank" Image={""} quote={"smthn"} />
@@ -38,16 +38,16 @@ export default function Team({ setProgress }) {
           <Card role="" name="Shrey Garg" Image={""} quote={"smthn"} />
         </div>
       </div>
-      <div className='mb-10'>
-        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">app department</p>
-        <div className="grid grid-cols-4 justify-items-center">
+      <div className='mb-14'>
+      <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">App Department</h4>
+        <div className="flex flex-wrap justify-center gap-8">
           <Card role="" name="Ravi Banchhiwal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Chinmay Nandawat" Image={""} quote={"smthn"} />
         </div>
       </div>
-      <div className='mb-10'>
-        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">ml department</p>
-        <div className="grid grid-cols-4 justify-items-center">
+      <div className='mb-14'>
+      <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">ML Department</h4>
+        <div className="flex flex-wrap justify-center gap-8">
           <Card role="" name="Piyush Mittal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Ujwal Gupta" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Chayan Mann" Image={""} quote={"smthn"} ig="" gh="" lin="" />
@@ -57,27 +57,27 @@ export default function Team({ setProgress }) {
           <Card role="" name="Shorya" Image={""} quote={"smthn"} ig="" gh="" lin="" />
         </div>
       </div>
-      <div className='mb-10'>
-        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">iot department</p>
-        <div className="grid grid-cols-4 justify-items-center">
+      <div className='mb-14'>
+      <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">Iot Department </h4>
+        <div className="flex flex-wrap justify-center gap-8">
           <Card role="" name="Arnav Chopra" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Kamaruchi Rachit Kumar" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Tanush Panwar" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Ashish Negi" Image={""} quote={"smthn"} ig="" gh="" lin="" />
         </div>
       </div>
-      <div className='mb-10'>
-        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">cp department</p>
-        <div className="grid grid-cols-4 justify-items-center">
+      <div className='mb-14'>
+      <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">CP Department</h4>
+        <div className="flex flex-wrap justify-center gap-8">
           <Card role="" name="Ansh Jain" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Abhinav Gupta" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Ashwin Bansal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Rishi Agarwal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
         </div>
       </div>
-      <div className='mb-10'>
-        <p className="text-5xl tracking-wide text-green-600 font-semibold my-10">ui/ux department</p>
-        <div className="grid grid-cols-4 justify-items-center">
+      <div className='mb-14'>
+      <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">UI/UX Department</h4>
+        <div className="flex flex-wrap justify-center gap-8">
           <Card role="" name="Mayank Bhatia" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Anisha Dua" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Pranjal Chopra" Image={""} quote={"smthn"} ig="" gh="" lin="" />
@@ -102,16 +102,16 @@ const Card = ({ role, name, Image, quote, ig, gh, lin }) => {
   const [showIcons, setShowIcons] = useState(false);
 
   return (
-    <a className="w-80 mb-10 p-4 h-80 rounded-3xl hover:scale-105 relative overflow-hidden group bg-white"
+    <a className="xl:w-80 xl:p-4 p-3 xl:h-80 w-60 h-60 rounded-3xl hover:scale-105 relative overflow-hidden group bg-white"
       onMouseEnter={() => setShowIcons(true)}
       onMouseLeave={() => setShowIcons(false)}
     >
       <div className="absolute inset-0 bg-green-600 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
-      <img className="non-draggable absolute z-10 -top-20 -right-20 text-9xl text-slate-100 group-hover:rotate-12 transition-transform duration-300" src={Image} alt="1" />
+      <img className="non-draggable absolute z-10 xl:-top-20 xl:-right-20 -top-10 -right-12 text-7xl text-slate-100 group-hover:rotate-12 transition-transform duration-300" src={Image} alt="1" />
       <p className="mb-2 text-2xl text-dark font-subhead group-hover:text-white transition-colors relative z-10 duration-300">{name}</p>
       <h3 className="font-medium text-lg text-slate-950 group-hover:text-white relative z-10 duration-300">{role}</h3>
       {quote && (
-        <p className={"text-dark font-semibold text-xl z-10 duration-300 absolute bottom-12"}>
+        <p className={"text-dark font-semibold xl:text-xl text-lg z-10 duration-300 absolute bottom-6"}>
           {quote}
         </p>
       )}
