@@ -55,7 +55,7 @@ Follow these steps to start contributing:
 
    ```
     
-if it isn't correct then set using the below commands.
+   if it isn't correct then set using the below commands.
    ```bash
    git remote set-url origin <url>
    git remote add upstream <url>
@@ -76,9 +76,11 @@ if it isn't correct then set using the below commands.
 
    ```
    
-   then start contributing to the branch.
 
-4. **Commit changes:**
+5. **Start contributing to the branch**
+   
+
+6. **Commit changes:**
 
    first stage the changes
    ```bash
@@ -92,20 +94,15 @@ if it isn't correct then set using the below commands.
 
    ```
    
-4. **Push changes to your fork:**
+7. **Push changes to your fork:**
 
    ```bash
    git push 
 
    ```
    
-   commit changes
-   ```bash
-   git commit -m "<commit message>"
 
-   ```
-
-5. **Send a pull request from github to upstream main**
+8. **Send a pull request from github to upstream main**
     and all set happy commiting!  
 
 
