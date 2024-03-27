@@ -26,7 +26,7 @@ export default function Team({ setProgress }) {
         </div>
       </div>
       <div className='mb-14'>
-      <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto text-center w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">Web Department</h4>
+        <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto text-center w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">Web Department</h4>
         <div className="flex flex-wrap justify-center gap-8">
           <Card role="" name="Adisht Jaglan" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Garvit" Image={""} quote={"smthn"} />
@@ -39,14 +39,14 @@ export default function Team({ setProgress }) {
         </div>
       </div>
       <div className='mb-14'>
-      <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">App Department</h4>
+        <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">App Department</h4>
         <div className="flex flex-wrap justify-center gap-8">
           <Card role="" name="Ravi Banchhiwal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Chinmay Nandawat" Image={""} quote={"smthn"} />
         </div>
       </div>
       <div className='mb-14'>
-      <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">ML Department</h4>
+        <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">ML Department</h4>
         <div className="flex flex-wrap justify-center gap-8">
           <Card role="" name="Piyush Mittal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Ujwal Gupta" Image={""} quote={"smthn"} ig="" gh="" lin="" />
@@ -58,7 +58,7 @@ export default function Team({ setProgress }) {
         </div>
       </div>
       <div className='mb-14'>
-      <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">Iot Department </h4>
+        <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">Iot Department </h4>
         <div className="flex flex-wrap justify-center gap-8">
           <Card role="" name="Arnav Chopra" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Kamaruchi Rachit Kumar" Image={""} quote={"smthn"} ig="" gh="" lin="" />
@@ -67,7 +67,7 @@ export default function Team({ setProgress }) {
         </div>
       </div>
       <div className='mb-14'>
-      <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">CP Department</h4>
+        <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">CP Department</h4>
         <div className="flex flex-wrap justify-center gap-8">
           <Card role="" name="Ansh Jain" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Abhinav Gupta" Image={""} quote={"smthn"} ig="" gh="" lin="" />
@@ -76,7 +76,7 @@ export default function Team({ setProgress }) {
         </div>
       </div>
       <div className='mb-14'>
-      <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">UI/UX Department</h4>
+        <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">UI/UX Department</h4>
         <div className="flex flex-wrap justify-center gap-8">
           <Card role="" name="Mayank Bhatia" Image={""} quote={"smthn"} ig="" gh="" lin="" />
           <Card role="" name="Anisha Dua" Image={""} quote={"smthn"} ig="" gh="" lin="" />
@@ -110,11 +110,9 @@ const Card = ({ role, name, Image, quote, ig, gh, lin }) => {
       <img className="non-draggable absolute z-10 xl:-top-20 xl:-right-20 -top-10 -right-12 text-7xl text-slate-100 group-hover:rotate-12 transition-transform duration-300" src={Image} alt="1" />
       <p className="mb-2 text-2xl text-dark font-subhead group-hover:text-white transition-colors relative z-10 duration-300">{name}</p>
       <h3 className="font-medium text-lg text-slate-950 group-hover:text-white relative z-10 duration-300">{role}</h3>
-      {quote && (
-        <p className={"text-dark font-semibold xl:text-xl text-lg z-10 duration-300 absolute bottom-6"}>
-          {quote}
-        </p>
-      )}
+      <p className={"text-dark font-semibold xl:text-xl text-lg z-10 duration-300 absolute bottom-12"}>
+        {quote}
+      </p>
       {showIcons && (
         <div className="absolute bottom-4 left-4 flex gap-4 z-10">
           <a href={gh} target="_blank" rel="noopener noreferrer">
