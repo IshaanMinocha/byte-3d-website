@@ -8,6 +8,7 @@ Welcome to the source code of 3D website made for BYTE Cult! The society is aime
 ## Table of Contents
 
 - [Installation](#installation)
+- [Contributing](#contributing)
 - [Usage](#usage)
 - daalta hu baaki
 
@@ -15,28 +16,98 @@ Welcome to the source code of 3D website made for BYTE Cult! The society is aime
 
 Follow these steps to set up the development environment:
 
-1. **Clone the repository:**
+1. **Fork the repository**
+
+2. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/IshaanMinocha/byte-3d-website.git
+   git clone https://github.com/<your-gh-username>/byte-3d-website.git
    cd byte-3d-website
 
    ```
 
-2. **Install Dependencies:**
+3. **Install Dependencies:**
 
    ```bash
    npm i
 
    ```
 
-3. **Start the development server:**
+4. **Start the development server:**
 
    ```bash
    npm run dev
 
    ```
    The application should now be running at http://localhost:5173
+
+## Contributing
+to this project
+
+Follow these steps to start contributing:
+
+1. **Setup origin and upstream in bash**
+
+   first check your current upstream(should be [https://github.com/IshaanMinocha/byte-3d-website.git](https://github.com/IshaanMinocha/byte-3d-website.git)) and origin(should be your forked repo link) by typing in the following command.
+   
+    ```bash
+   git remote -v
+
+   ```
+    
+if it isn't correct then set using the below commands.
+   ```bash
+   git remote set-url origin <url>
+   git remote add upstream <url>
+
+   ```
+   
+3. **Pull latest changes from upstream:**
+
+   ```bash
+   git pull upstream
+
+   ```
+
+4. **Checkout to assigned issue branch:**
+
+   ```bash
+   git checkout <branch-name>
+
+   ```
+   
+   then start contributing to the branch.
+
+4. **Commit changes:**
+
+   first stage the changes
+   ```bash
+   git add .
+
+   ```
+   
+   commit changes
+   ```bash
+   git commit -m "<commit message>"
+
+   ```
+   
+4. **Push changes to your fork:**
+
+   ```bash
+   git push 
+
+   ```
+   
+   commit changes
+   ```bash
+   git commit -m "<commit message>"
+
+   ```
+
+5. **Send a pull request from github to upstream main**
+    and all set happy commiting!  
+
 
 ## Usage
 
