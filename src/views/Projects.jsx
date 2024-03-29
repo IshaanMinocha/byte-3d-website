@@ -2,8 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { projectsData } from '../Data/projectsData';
 
 const ProjectCard = ({ projectName, projectPhoto, githubLink, liveLink, onCardClick }) => {
+
+  const handleClick = (event) => {
+    if (!event.target.closest('a')) {
+      onCardClick();
+    }
+  };
+
   return (
-    <div className="max-w-xs rounded overflow-hidden shadow-lg m-4 cursor-pointer" onClick={onCardClick}>
+    <div className="max-w-xs rounded overflow-hidden shadow-lg m-4 cursor-pointer" onClick={handleClick}>
       <img className="w-full" src={projectPhoto} alt={projectName} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{projectName}</div>
