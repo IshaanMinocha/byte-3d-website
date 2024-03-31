@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Spinner from '../../public/spinner.gif';
-
-const Bootloader = () => {
+import Spinner from '../../public/loading.gif';
+const Bootloader = ({ children }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -13,12 +12,14 @@ const Bootloader = () => {
     }, []);
 
     return (
-        <div className={`bootloader ${loading ? 'loading' : ''}`}>
+        <div className="relative h-screen w-screen">
             {loading ? (
-                <img src={Spinner} alt="loading screen..." />
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <img src={Spinner} alt="loading screen..." className="w-full h-full" />
+                </div>
             ) : (
                 <div className="content">
-                    {/* yaha content aa jayega after */}
+                    {children}
                 </div>
             )}
         </div>
