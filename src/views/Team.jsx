@@ -15,75 +15,75 @@ export default function Team({ setProgress }) {
         <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">Admins</h4>
         <div className="flex flex-wrap justify-center xl:gap-20 gap-12">
           <Card role="Competitive Admin" name="Ishaan Minocha" Image={"ishu.png"} quote={"codes metaverse in vanilla css"} ig="https://www.instagram.com/ishaantrovert" gh="https://github.com/IshaanMinocha" lin="https://www.linkedin.com/ishaanminocha" />
-          <Card role="Research Admin" name="Shivam Kumar Jha" Image={""} quote={"smthn"} />
-          <Card role="Community Admin" name="Abir Thakur" Image={""} quote={"smthn"} />
-          <Card role="" name="Aman Sharma" Image={""} quote={"smthn"} />
-          <Card role="" name="Chanmeet Singh" Image={""} quote={"smthn"} />
-          <Card role="" name="Ansh Kapila" Image={""} quote={"smthn"} />
-          <Card role="" name="Subhasish Panda" Image={""} quote={"smthn"} />
-          <Card role="" name="Haaris Huda" Image={""} quote={"smthn"} />
-          <Card role="" name="Chayan Khetan" Image={""} quote={"smthn"} />
+          <Card role="Research Admin" name="Shivam Kumar Jha" Image={""} quote={"smthn"} ig="" gh="" lin=""/>
+          <Card role="Community Admin" name="Abir Thakur" Image={""} quote={"Brewing passion through code and pixels"} ig="https://www.instagram.com/abir_inferno2211/" gh="https://github.com/Inferno2211" lin="https://www.linkedin.com/in/abir-thakur-a83067268/"/>
+          <Card role="" name="Aman Sharma" Image={""} quote=    "Exploring Solver" ig="https://www.instagram.com/exploring_solver/" gh="https://github.com/exploring-solver" lin="https://www.linkedin.com/in/aman-sharma-a37072263/" />
+          <Card role="" name="Chanmeet Singh" Image={"chanmeetphoto.png"} quote={"smthn"}ig="https://www.instagram.com/singh__chanmeet?igsh=MTJ5MGd0cmlmZGNrNw==" gh="https://github.com/singhchanmeet/" lin="https://www.linkedin.com/in/chanmeet-singh-sahni-504985257/" />
+          <Card role="" name="Ansh Kapila" Image={""} quote={"smthn"} ig="" gh="" lin=""/>
+          <Card role="" name="Subhasish Panda" Image={""} quote={"smthn"} ig="" gh="" lin=""/>
+          <Card role="" name="Haaris Huda" Image={""} quote={"smthn"} ig="" gh="" lin=""/>
+          <Card role="" name="Chayan Khetan" Image={""} quote={"smthn"} ig="" gh="" lin=""/>
         </div>
       </div>
       <div className='mb-14'>
         <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto text-center w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">Web Department</h4>
         <div className="flex flex-wrap justify-center gap-8">
-          <Card role="" name="Adisht Jaglan" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Garvit" Image={""} quote={"smthn"} />
-          <Card role="" name="Shivank" Image={""} quote={"smthn"} />
-          <Card role="" name="Harshill Aggarwal" Image={""} quote={"smthn"} />
-          <Card role="" name="Khushi Minda" Image={""} quote={"smthn"} />
-          <Card role="" name="Pratham Gupta" Image={""} quote={"smthn"} />
-          <Card role="" name="Sagar Jain" Image={""} quote={"smthn"} />
-          <Card role="" name="Shrey Garg" Image={""} quote={"smthn"} />
+          <Card role="" name="Adisht Jaglan" Image={""} quote={"undefined"} ig="" gh="https://github.com/AdishtJaglan" lin="https://linkedin.com/in/adisht-jaglan-92441b1b8/" />
+          <Card role="" name="Garvit" Image={""} quote={"Devs are from Venus, Ops are from Mars"} ig="https://www.instagram.com/garvit.3835/" gh="https://github.com/garvit3835" lin="https://www.linkedin.com/in/garvit3835"/>
+          <Card role="" name="Shivank" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Harshill Aggarwal" Image={""} quote={"Code with passion, debug with patience."} ig="https://www.instagram.com/harshill_aggarwal/" gh="https://github.com/Harshillagg" lin="https://www.linkedin.com/in/harshill-aggarwal-b90bbb258/"/>
+          <Card role="" name="Khushi Minda" Image={"khushipic.png"} quote={"My hobbies include pushin bugs"} ig="https://www.instagram.com/khushiiiiiieee_?igsh=MWdkdWdkZHc4eGNjZA==" gh="https://github.com/khushiminda" lin="https://www.linkedin.com/in/khushi-minda2004/"/>
+          <Card role="" name="Pratham Gupta" Image={""} quote={"print() is the best debugger"} ig="https://www.instagram.com/pratham.gupta.1" gh="https://github.com/PrathamGupta06" lin="https://www.linkedin.com/in/prathamgupta006/"/>
+          <Card role="" name="Sagar Jain" Image={""} quote={"Weaving code into captivating user journeys."} ig="https://www.instagram.com/s_jain17/" gh="https://github.com/sagarjain03" lin="http://www.linkedin.com/in/sagar-jain-a68aa927b"/>
+          <Card role="" name="Shrey Garg" Image={""} quote={"Talk is Cheap, show me the CODE"} ig="https://www.instagram.com/_shreygarg_18?igsh=MTM5MThzZ2huZ3R0ag==" gh="https://github.com/Shrey1803" lin="https://www.linkedin.com/in/shrey-garg-016833276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"/>
         </div>
       </div>
       <div className='mb-14'>
         <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">App Department</h4>
         <div className="flex flex-wrap justify-center gap-8">
-          <Card role="" name="Ravi Banchhiwal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Chinmay Nandawat" Image={""} quote={"smthn"} />
+          <Card role="" name="Ravi Banchhiwal" Image={""} quote={"smthn"} ig="https://www.instagram.com/i.ravizz?igsh=MWl6azNhYnd5dmN5OQ==" gh="https://github.com/ivar03" lin="https://www.linkedin.com/in/ravi-banchhiwal-505b3a282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" />
+          <Card role="" name="Chinmay Nandawat" Image={""} quote={"If at first, you don't succeed, call it version 1.0."}  ig="https://www.instagram.com/smittykitty04?igsh=MWZ0N3BvZ21vMWQ3MA==" gh="https://github.com/Smitty-Kitty" lin="https://www.linkedin.com/in/chinmay-n-0a4aa4300/" />
         </div>
       </div>
       <div className='mb-14'>
         <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">ML Department</h4>
         <div className="flex flex-wrap justify-center gap-8">
-          <Card role="" name="Piyush Mittal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Piyush Mittal" Image={""} quote={"A Nomad, exploring everything"} ig="https://github.com/Piyush-io" gh="https://github.com/Piyush-io" lin="https://www.linkedin.com/in/piyush-mittal-hi/" />
           <Card role="" name="Ujwal Gupta" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Chayan Mann" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Anushka Singh" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Chayan Mann" Image={""} quote={"Wait till I get my money right"} ig="https://www.instagram.com/chayan_mann/" gh="https://github.com/chayan-mann" lin="https://www.linkedin.com/in/chayan-mann" />
+          <Card role="" name="Anushka Singh" Image={"anushkapic.jpeg"} quote={"Passion fuels code, solving ignites purpose"} ig="" gh="https://github.com/Anushka1515" lin="https://www.linkedin.com/in/anushka-singh-aa2695293/" />
           <Card role="" name="Shivam Gupta" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Nalin Khanna" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Shorya" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Nalin Khanna" Image={""} quote={"the world is one big data problem"} ig="https://www.instagram.com/nalin__khanna?igsh=cjdmY3A1bzBobndj" gh="" lin="https://www.linkedin.com/in/nalin-khanna-877a99246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" />
+          <Card role="" name="Shorya" Image={""} quote={"smthn"} ig="https://www.instagram.com/shourya_roy03/" gh="https://github.com/shourya03roy/" lin="https://www.linkedin.com/in/shourya-roy-b7446b230/" />
         </div>
       </div>
       <div className='mb-14'>
         <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">Iot Department </h4>
         <div className="flex flex-wrap justify-center gap-8">
-          <Card role="" name="Arnav Chopra" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Kamaruchi Rachit Kumar" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Tanush Panwar" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Arnav Chopra" Image={""} quote={"Exploiting Boundaries."} ig="https://www.instagram.com/silentarnav_1290" gh="https://www.github.com/silentarnav1290" lin="https://www.linkedin.com/in/arnav-chopra-72353a2a2" />
+          <Card role="" name="Kamaruchi Rachit Kumar" Image={""} quote={"Lost in lines of code, finding order in chaos."} ig="https://www.instagram.com/rachittt._04/" gh="https://github.com/Krachitkumar" lin="https://www.linkedin.com/in/kamarushi-rachit-kumar-748991188" />
+          <Card role="" name="Tanush Panwar" Image={""} quote={"In the digital forest, where syntax prowls and algorithms howl, the Sanskari whispers elegance, while the Wolf roars with wild wisdom. Together, they code a symphony of integrity."} ig="https://www.instagram.com/sanskari_wolf/" gh="https://github.com/SanskariWolf/" lin="https://www.linkedin.com/in/tanushpurwar/" />
           <Card role="" name="Ashish Negi" Image={""} quote={"smthn"} ig="" gh="" lin="" />
         </div>
       </div>
       <div className='mb-14'>
         <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">CP Department</h4>
         <div className="flex flex-wrap justify-center gap-8">
-          <Card role="" name="Ansh Jain" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Abhinav Gupta" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Ashwin Bansal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Ansh Jain" Image={""} quote={"Jainwin"} ig="https://www.instagram.com/who.anshjain/" gh="https://github.com/AnshJain9159" lin="https://www.linkedin.com/in/ansh-jain-78986b242" />
+          <Card role="" name="Abhinav Gupta" Image={""} quote={"Error not found"} ig="https://www.instagram.com/er_abhinav_guptaa?igsh=MTRvb3M3dDg1NHg3eA==" gh="https://github.com/abhinav2805-ux" lin="https://www.linkedin.com/in/abhinav-gupta-b3317128a/" />
+          <Card role="" name="Ashwin Bansal" Image={""} quote={"Passion drives perfection Github"} ig="https://www.instagram.com/ashwin_ab_19?igsh=NGs2Z3E0b2QyaDE=" gh="https://github.com/Ashwin1902" lin="https://www.linkedin.com/in/ashwin-bansal-5b5a70257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" />
           <Card role="" name="Rishi Agarwal" Image={""} quote={"smthn"} ig="" gh="" lin="" />
         </div>
       </div>
       <div className='mb-14'>
         <h4 className="text-3xl sm:text-4xl tracking-wide mx-auto w-fit bg-slate-950 text-white p-2 border-[2px] border-black font-semibold my-10 rounded-xl">UI/UX Department</h4>
         <div className="flex flex-wrap justify-center gap-8">
-          <Card role="" name="Mayank Bhatia" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Anisha Dua" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Pranjal Chopra" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Vipul Kohli" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Swasti" Image={""} quote={"smthn"} ig="" gh="" lin="" />
-          <Card role="" name="Vidhi Gupta" Image={""} quote={"smthn"} ig="" gh="" lin="" />
+          <Card role="" name="Mayank Bhatia" Image={""} quote={"Crafting digital journeys with purpose"} ig="https://www.instagram.com/mayank_bh01/" gh="https://github.com/mayankk-prog" lin="https://www.linkedin.com/in/mayank-bhatia-714289250/" />
+          <Card role="" name="Anisha Dua" Image={""} quote={"coding bridges imagination to reality "} ig="https://www.instagram.com/an_isha4551?igsh=a3V1NWc5OHdwZGZ3" gh="" lin="https://www.linkedin.com/in/anisha-dua-894555272" />
+          <Card role="" name="Pranjal Chopra" Image={""} quote={"Believe you can and you're halfway there"} ig="https://www.instagram.com/_pranjalchopra_?igsh=N3Y1MTFoNDNmbTA4&utm_source=qr" gh=" https://github.com/pranjal-chopra" lin="https://www.linkedin.com/in/pranjal-chopra-126805294?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Br6vIZKb6QiK9RJtL2rZEtQ%3D%3D" />
+          <Card role="" name="Vipul Kohli" Image={""} quote={"Code is like humor. When you have to explain it, it's bad"} ig="https://www.linkedin.com/in/vipul-kohli-31bb3921b" gh="https://github.com/Aisekaisee/Vipul24.git" lin="" />
+          <Card role="" name="Swasti" Image={""} quote={"Turning 'It works' into 'It's magical!"} ig="https://www.instagram.com/_callme.shru?igsh=MTZzeXlkeHVvOHJ5dw==" gh="https://github.com/swasti-jain19" lin="http://www.linkedin.com/in/swasti-jain-381907285" />
+          <Card role="" name="Vidhi Gupta" Image={""} quote={"Talk is boring, show me the code"} ig=" https://www.instagram.com/vidhi.gupta.30?igsh=MWQ3ZmNuc2dsbjl6eg%3D%3D&utm_source=qr" gh="https://github.com/vidhi-gupta45" lin=" www.linkedin.com/in/vidhi-gupta-661b42292" />
         </div>
       </div>
       <div>
