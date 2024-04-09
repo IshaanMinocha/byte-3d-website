@@ -61,11 +61,13 @@ Follow these steps to start contributing:
    git remote add upstream <url>
 
    ```
-   
-3. **Pull latest changes from upstream:**
+
+2. **Raise an issue and get assigned a branch to work on**
+
+3. **Fetch upstream branches:**
 
    ```bash
-   git pull upstream
+   git fetch upstream
 
    ```
 
@@ -76,11 +78,17 @@ Follow these steps to start contributing:
 
    ```
    
+5.. **Pull latest changes from upstream to assigned branch:**
 
-5. **Start contributing to the branch**
+   ```bash
+   git pull upstream <branch-name>
+
+   ```   
+
+6. **Start contributing to the branch**
    
 
-6. **Commit changes:**
+7. **Commit changes:**
 
    first stage the changes
    ```bash
@@ -94,7 +102,7 @@ Follow these steps to start contributing:
 
    ```
    
-7. **Push changes to your fork:**
+8. **Push changes to your fork:**
 
    ```bash
    git push 
@@ -102,7 +110,7 @@ Follow these steps to start contributing:
    ```
    
 
-8. **Send a pull request from github to upstream main**
+9. **Send a pull request from github to upstream main**
     and all set happy commiting!  
 
 

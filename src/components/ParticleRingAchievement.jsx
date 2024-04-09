@@ -26,7 +26,7 @@ const ParticleRingAchievements = ({ title }) => {
     {
       id: 3,
       image: achiiit,
-      heading: `Empowher '23 Runner Ups`,
+      heading: `Empowher '23 Winners`,
       projectLink: 'https://example.com/project2'
     },
     {

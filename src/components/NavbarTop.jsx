@@ -23,6 +23,7 @@ const NavbarTop = () => {
           <div className="hidden sm:flex sm:items-center md:pl-32">
             <NavLink exact to="/" activeClassName="bg-gray-700" className="text-white hover:bg-gray-700 px-4 py-4 text-sm font-medium">Home</NavLink>
             <NavLink to="/about" activeClassName="bg-gray-700" className="text-white hover:bg-gray-700 px-4 py-4 text-sm font-medium">About</NavLink>
+            <NavLink to="/projects" activeClassName="bg-gray-700" className="text-white hover:bg-gray-700 px-4 py-4 text-sm font-medium">Projects</NavLink>
             <NavLink to="/achievements" activeClassName="bg-gray-700" className="text-white hover:bg-gray-700 px-4 py-4 text-sm font-medium">Achievements</NavLink>
             {/* <NavLink to="/tasks" activeClassName="bg-gray-700" className="text-white hover:bg-gray-700 px-4 py-4 text-sm font-medium">Challenges</NavLink> */}
             <NavLink to="/team" activeClassName="bg-gray-700" className="text-white hover:bg-gray-700 px-4 py-4 text-sm font-medium">Team</NavLink>
