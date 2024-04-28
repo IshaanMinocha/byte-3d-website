@@ -8,6 +8,7 @@ import achiiit from "../Assets/ach5.jpg"
 import achiit from "../Assets/ach6.jpeg"
 import acht from "../Assets/ach7.png"
 import achhwm from "../Assets/ach8.png"
+import achdtu from "../Assets/achdtu.jpeg"
 
 const ParticleRingAchievements = ({ title }) => {
   const achievements = [
@@ -45,6 +46,12 @@ const ParticleRingAchievements = ({ title }) => {
       id: 6,
       image: achhwm,
       heading: `HackWithMAIT 4.0 Winners`,
+      projectLink: 'https://example.com/project2'
+    },
+    {
+      id: 7,
+      image: achdtu,
+      heading: `Vihaan 007 Winners`,
       projectLink: 'https://example.com/project2'
     },
     // {
